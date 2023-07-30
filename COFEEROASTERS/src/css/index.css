@@ -98,6 +98,11 @@ header nav .container-flex .menu-mobile {
   inset: 0;
   z-index: 10;
 }
+@media (min-width: 1024px) {
+  header nav .container-flex .menu-mobile {
+    display: none;
+  }
+}
 header nav .container-flex .menu-mobile .container-flex {
   flex-direction: column;
   padding-block-start: 2.5rem;
@@ -125,6 +130,13 @@ header .hero .container-flex {
   background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
   background-size: cover;
   border-radius: 10px;
+}
+header .hero .container-flex.about-img {
+  padding: 6.94rem 1.5rem 5.44rem 1.5rem;
+  background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+}
+header .hero .container-flex.about-img h2 {
+  font-size: 1.75rem;
 }
 header .hero .container-flex h2, header .hero .container-flex p {
   color: #FEFCF7;
@@ -344,6 +356,127 @@ main #how .container-flex .how-cards .how-card p {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5625rem;
+}
+main #commitment {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+main #commitment .container-flex {
+  flex-direction: column;
+  gap: 7.5rem;
+}
+main #commitment .container-flex .our {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #commitment .container-flex .our > img {
+  width: 100%;
+  height: 25rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+}
+main #commitment .container-flex .our h2 {
+  color: #333D4B;
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+main #commitment .container-flex .our p {
+  color: #333D4B;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  opacity: 0.8000000119;
+}
+main #quality {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+main #quality .container-flex {
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #2C343E;
+  border-radius: 0.625rem;
+  padding-inline: 1.5rem;
+  padding-block: 5rem 3.8rem;
+  position: relative;
+}
+main #quality .container-flex img {
+  position: absolute;
+  top: -5rem;
+  width: 85%;
+  border-radius: 0.5rem;
+}
+main #quality .container-flex h2 {
+  color: #FEFCF7;
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.75rem;
+  padding-block-start: 4rem;
+}
+main #quality .container-flex p {
+  color: #FEFCF7;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  opacity: 0.8000000119;
+}
+main #headquarters {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+main #headquarters .container-flex {
+  flex-direction: column;
+}
+main #headquarters .container-flex h2 {
+  color: #83888F;
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2rem;
+}
+main #headquarters .container-flex .headquarters-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 5rem;
+  gap: 1.33rem;
+}
+main #headquarters .container-flex .headquarters-card h2 {
+  color: #333D4B;
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.25rem;
+}
+main #headquarters .container-flex .headquarters-card p {
+  color: #333D4B;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
 }
 
 footer {
