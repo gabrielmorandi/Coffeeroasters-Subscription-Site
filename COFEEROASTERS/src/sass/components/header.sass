@@ -1,4 +1,5 @@
 @use '../abstracts/v'
+@use '../abstracts/m'
 
 header
   width: 100%
@@ -14,14 +15,46 @@ header
       justify-content: space-between
       align-items: center
       .logo
+        width: 100%
         display: flex
+        justify-content: space-between
+        align-items: center
+        z-index: 100
         img
           width: 100%
           max-width: 163px
-      .mobile-menu
+      button
         display: flex
-        .menu
-          display: none
+        border: none
+        background-color: transparent
+      .menu-desktop
+        display: none
+        @include m.desktop()
+          display: flex
+      .menu-mobile
+        position: absolute
+        display: flex
+        justify-content: center
+        width: 100%
+        padding-block-start: 5.5rem
+        background: linear-gradient(180deg, #FEFCF7 52.5%, rgba(254, 252, 247, 0.50) 100%)
+        inset: 0
+        z-index: 10
+        @include m.desktop()
+          display none
+        .container-flex
+          flex-direction: column
+          padding-block-start: 2.5rem
+          gap: 2rem
+          height: min-content
+          a
+            color: v.$grey-blue
+            text-align: center
+            font-family: Fraunces
+            font-size: 1.5rem
+            font-style: normal
+            font-weight: 900
+            line-height: 2rem
   .hero
     width: 100%
     display: grid

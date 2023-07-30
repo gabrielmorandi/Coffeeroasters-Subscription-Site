@@ -6,12 +6,10 @@ import About from "./pages/About"
 function App() {
   return (
     <Router>
-      <main>
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </Router>
   )
 }

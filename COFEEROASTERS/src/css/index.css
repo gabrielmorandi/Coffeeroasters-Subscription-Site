@@ -65,17 +65,53 @@ header nav .container-flex {
   align-items: center;
 }
 header nav .container-flex .logo {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 header nav .container-flex .logo img {
   width: 100%;
   max-width: 163px;
 }
-header nav .container-flex .mobile-menu {
+header nav .container-flex button {
   display: flex;
+  border: none;
+  background-color: transparent;
 }
-header nav .container-flex .mobile-menu .menu {
+header nav .container-flex .menu-desktop {
   display: none;
+}
+@media (min-width: 1024px) {
+  header nav .container-flex .menu-desktop {
+    display: flex;
+  }
+}
+header nav .container-flex .menu-mobile {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-block-start: 5.5rem;
+  background: linear-gradient(180deg, #FEFCF7 52.5%, rgba(254, 252, 247, 0.5) 100%);
+  inset: 0;
+  z-index: 10;
+}
+header nav .container-flex .menu-mobile .container-flex {
+  flex-direction: column;
+  padding-block-start: 2.5rem;
+  gap: 2rem;
+  height: min-content;
+}
+header nav .container-flex .menu-mobile .container-flex a {
+  color: #333D4B;
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2rem;
 }
 header .hero {
   width: 100%;
@@ -129,7 +165,7 @@ main #collection .container-flex h2 {
   width: 100%;
   text-align: center;
   font-family: Fraunces;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
   line-height: 4.5rem;
   background: linear-gradient(180deg, rgb(131, 136, 143) 0%, #FEFCF7 80%);
@@ -139,6 +175,11 @@ main #collection .container-flex h2 {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+@media (min-width: 330px) {
+  main #collection .container-flex h2 {
+    font-size: 2.5rem;
+  }
 }
 main #collection .container-flex .card {
   width: 100%;
