@@ -84,13 +84,22 @@ main
           line-height: 1.5625rem
           opacity: 0.800000011920929
       .why-cards
+        position: relative
         display: flex
         flex-direction: column
         align-items: center
         padding: 1.5rem
         gap: 1.5rem
-        background-color: #293039
-        border-radius: 0 0 10px 10px
+        background-color: transparent
+        &::before
+          position: absolute
+          top: -24px
+          content: ''
+          width: 100%
+          height: 52.5%
+          z-index: -1
+          border-radius: 0 0 10px 10px
+          background-color: #414f5a
         .why-card
           display: flex
           flex-direction: column
