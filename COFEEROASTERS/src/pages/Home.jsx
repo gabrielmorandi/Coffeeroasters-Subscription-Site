@@ -65,9 +65,9 @@ function HomePage() {
               directly to your door, at your schedule.
             </p>
             <div className="button-primary">
-              <a href="#">
+              <Link to={"/plan"}>
                 <button>Create your plan</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -183,9 +183,9 @@ function HomePage() {
               </div>
             </div>
             <div className="button-primary">
-              <a href="#">
+              <Link to={"/plan"}>
                 <button>Create your plan</button>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

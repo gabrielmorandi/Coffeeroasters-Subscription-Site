@@ -117,7 +117,7 @@ main
             color: v.$light
           h3
             text-align: center
-            font-family: Fraunces 9pt
+            font-family: Fraunces
             font-size: 1.5rem
             font-weight: 900
             line-height: 2rem
@@ -140,7 +140,6 @@ main
         text-align: center
         font-family: Fraunces
         font-size: 1.5rem
-        font-style: normal
         font-weight: 900
         line-height: 2rem
         color: v.$grey
@@ -157,7 +156,6 @@ main
             text-align: center
             font-family: Fraunces
             font-size: 4.5rem
-            font-style: normal
             font-weight: 900
             line-height: 4.5rem
             color: v.$orange
@@ -165,16 +163,14 @@ main
             color: v.$grey-blue
           h3
             text-align: center
-            font-family: Fraunces 9pt
+            font-family: Fraunces
             font-size: 1.75rem
-            font-style: normal
             font-weight: 900
             line-height: 2rem
           p
             text-align: center
             font-family: Barlow
             font-size: 0.9375rem
-            font-style: normal
             font-weight: 400
             line-height: 1.5625rem
   #commitment
@@ -205,7 +201,6 @@ main
           text-align: center
           font-family: Barlow
           font-size: 0.9375rem
-          font-style: normal
           font-weight: 400
           line-height: 1.5625rem
           opacity: 0.800000011920929
@@ -232,7 +227,6 @@ main
         text-align: center
         font-family: Fraunces
         font-size: 1.75rem
-        font-style: normal
         font-weight: 900
         line-height: 1.75rem
         padding-block-start: 4rem
@@ -241,7 +235,6 @@ main
         text-align: center
         font-family: Barlow
         font-size: 0.9375rem
-        font-style: normal
         font-weight: 400
         line-height: 1.5625rem
         opacity: 0.800000011920929
@@ -256,7 +249,6 @@ main
         text-align: center
         font-family: Fraunces
         font-size: 1.5rem
-        font-style: normal
         font-weight: 900
         line-height: 2rem
       .headquarters-card
@@ -270,7 +262,6 @@ main
           text-align: center
           font-family: Fraunces
           font-size: 1.75rem
-          font-style: normal
           font-weight: 900
           line-height: 2.25rem
         p
@@ -278,6 +269,131 @@ main
           text-align: center
           font-family: Barlow
           font-size: 1rem
-          font-style: normal
           font-weight: 400
           line-height: 1.625rem
+  #plans
+    width: 100%
+    display: grid
+    place-items: center
+    background-color: #293039
+    padding-block: 5rem
+    border-radius: 0.625rem
+    .container-flex
+      flex-direction: column
+      gap: 3.5rem
+      .plan
+        display: flex
+        flex-direction: column
+        gap: 1.5rem
+        h2
+          color: #FDD6BA
+          text-align: center
+          font-family: Fraunces
+          font-size: 4.5rem
+          font-weight: 900
+          line-height: 4.5rem
+        h3
+          color: #FFF
+          text-align: center
+          font-family: Fraunces
+          font-size: 1.75rem
+          font-weight: 900
+          line-height: 2rem
+        p
+          color: #FFF
+          text-align: center
+          font-family: Barlow
+          font-size: 0.9375rem
+          font-weight: 400
+          line-height: 1.5625rem
+  #make-plan
+    width: 100%
+    display: grid
+    place-items: center
+    .container-flex
+      form
+        display: flex
+        flex-direction: column
+        gap: 6rem
+        .select
+          display: flex
+          flex-direction: column
+          gap: 2rem
+          .select-header
+            display: grid
+            grid-template-columns: 1fr 19px
+            gap: 4.3rem
+            align-items: center
+            h2
+              color: #83888F
+              font-family: Fraunces
+              font-size: 1.5rem
+              font-weight: 900
+              line-height: 1.75rem
+            img.invert-arrow
+              rotate: -180deg
+        .select-content
+          display: flex
+          flex-direction: column
+          width: 100%
+          gap: 1.5rem
+          .radio
+            input
+              display: none
+            label
+              display: flex
+              flex-direction: column
+              padding: 1.5rem
+              background-color: #F4F1EB
+              border-radius: .5rem
+              gap: .5rem
+              &.selected
+                background-color: #0E8784
+                h3, p
+                  color: #FFF
+              h3
+                color: #333D4B
+                font-family: Fraunces
+                font-size: 1.5rem
+                font-weight: 900
+                line-height: 2rem
+              p
+                color: #333D4B
+                font-family: Barlow
+                font-size: 1rem
+                font-weight: 400
+                line-height: 1.625rem
+  #create-plan
+    display: grid
+    place-items: center
+    .container-flex
+      flex-direction: column
+      gap: 5rem
+      .order
+        display: flex
+        flex-direction: column
+        gap: .5rem
+        background-color: #272e37
+        padding: 1.5rem
+        border-radius: .5rem
+        p
+          color: #FFF
+          font-family: Barlow
+          font-size: 1rem
+          font-weight: 400
+          line-height: 1.625rem
+          opacity: 0.5036933422088623
+        h2
+          color: #FFF
+          font-family: Fraunces
+          font-size: 1.5rem
+          font-style: normal
+          font-weight: 900
+          line-height: 2.5rem
+        .d
+          color: #0E8784
+          font-family: Fraunces
+          font-size: 1.5rem
+          font-style: normal
+          font-weight: 900
+          line-height: 2.5rem
