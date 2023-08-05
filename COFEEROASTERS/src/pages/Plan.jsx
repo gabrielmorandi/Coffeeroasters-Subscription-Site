@@ -13,19 +13,19 @@ function Plan() {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
   const [select1, setSelect1] = useState(true)
-  const [selectedInput1, setSelectedInput1] = useState("filter")
+  const [selectedInput1, setSelectedInput1] = useState("Filter")
 
   const [select2, setSelect2] = useState(true)
-  const [selectedInput2, setSelectedInput2] = useState("decaf")
+  const [selectedInput2, setSelectedInput2] = useState("Decaf")
 
   const [select3, setSelect3] = useState(true)
-  const [selectedInput3, setSelectedInput3] = useState("small")
+  const [selectedInput3, setSelectedInput3] = useState("250g")
 
   const [select4, setSelect4] = useState(true)
-  const [selectedInput4, setSelectedInput4] = useState("cafetiere")
+  const [selectedInput4, setSelectedInput4] = useState("Cafetiére")
 
   const [select5, setSelect5] = useState(true)
-  const [selectedInput5, setSelectedInput5] = useState("week")
+  const [selectedInput5, setSelectedInput5] = useState("Every Week")
 
   useEffect(() => {
     if (menuIsOpen) {
@@ -129,12 +129,12 @@ function Plan() {
                         type="radio"
                         name="coffee"
                         id="capsule"
-                        onChange={() => setSelectedInput1("capsule")}
+                        onChange={() => setSelectedInput1("Capsule")}
                       />
                       <label
                         htmlFor="capsule"
                         className={
-                          selectedInput1 == "capsule" ? "selected" : null
+                          selectedInput1 == "Capsule" ? "selected" : null
                         }
                       >
                         <h3>Capsule</h3>
@@ -148,12 +148,12 @@ function Plan() {
                         type="radio"
                         name="coffee"
                         id="filter"
-                        onChange={() => setSelectedInput1("filter")}
+                        onChange={() => setSelectedInput1("Filter")}
                       />
                       <label
                         htmlFor="filter"
                         className={
-                          selectedInput1 == "filter" ? "selected" : null
+                          selectedInput1 == "Filter" ? "selected" : null
                         }
                       >
                         <h3>Filter</h3>
@@ -168,13 +168,13 @@ function Plan() {
                         type="radio"
                         name="coffee"
                         id="espresso"
-                        onChange={() => setSelectedInput1("espresso")}
+                        onChange={() => setSelectedInput1("Espresso")}
                       />
                       <input type="radio" name="coffee" id="espresso" />
                       <label
                         htmlFor="espresso"
                         className={
-                          selectedInput1 == "espresso" ? "selected" : null
+                          selectedInput1 == "Espresso" ? "selected" : null
                         }
                       >
                         <h3>Espresso</h3>
@@ -206,12 +206,12 @@ function Plan() {
                         type="radio"
                         name="coffee-type"
                         id="origin"
-                        onChange={() => setSelectedInput2("origin")}
+                        onChange={() => setSelectedInput2("Single Origin")}
                       />
                       <label
                         htmlFor="origin"
                         className={
-                          selectedInput2 == "origin" ? "selected" : null
+                          selectedInput2 == "Single Origin" ? "selected" : null
                         }
                       >
                         <h3>Single Origin</h3>
@@ -226,12 +226,12 @@ function Plan() {
                         type="radio"
                         name="coffee-type"
                         id="decaf"
-                        onChange={() => setSelectedInput2("decaf")}
+                        onChange={() => setSelectedInput2("Decaf")}
                       />
                       <label
                         htmlFor="decaf"
                         className={
-                          selectedInput2 == "decaf" ? "selected" : null
+                          selectedInput2 == "Decaf" ? "selected" : null
                         }
                       >
                         <h3>Decaf</h3>
@@ -246,12 +246,12 @@ function Plan() {
                         type="radio"
                         name="coffee-type"
                         id="blended"
-                        onChange={() => setSelectedInput2("blended")}
+                        onChange={() => setSelectedInput2("Blended")}
                       />
                       <label
                         htmlFor="blended"
                         className={
-                          selectedInput2 == "blended" ? "selected" : null
+                          selectedInput2 == "Blended" ? "selected" : null
                         }
                       >
                         <h3>Blended</h3>
@@ -283,13 +283,11 @@ function Plan() {
                         type="radio"
                         name="coffee-size"
                         id="small"
-                        onChange={() => setSelectedInput3("small")}
+                        onChange={() => setSelectedInput3("250g")}
                       />
                       <label
                         htmlFor="small"
-                        className={
-                          selectedInput3 == "small" ? "selected" : null
-                        }
+                        className={selectedInput3 == "250g" ? "selected" : null}
                       >
                         <h3>250g</h3>
                         <p>
@@ -303,13 +301,11 @@ function Plan() {
                         type="radio"
                         name="coffee-size"
                         id="medium"
-                        onChange={() => setSelectedInput3("medium")}
+                        onChange={() => setSelectedInput3("500g")}
                       />
                       <label
                         htmlFor="medium"
-                        className={
-                          selectedInput3 == "medium" ? "selected" : null
-                        }
+                        className={selectedInput3 == "500g" ? "selected" : null}
                       >
                         <h3>500g</h3>
                         <p>
@@ -323,11 +319,13 @@ function Plan() {
                         type="radio"
                         name="coffee-size"
                         id="big"
-                        onChange={() => setSelectedInput3("big")}
+                        onChange={() => setSelectedInput3("1000g")}
                       />
                       <label
                         htmlFor="big"
-                        className={selectedInput3 == "big" ? "selected" : null}
+                        className={
+                          selectedInput3 == "1000g" ? "selected" : null
+                        }
                       >
                         <h3>1000g</h3>
                         <p>
@@ -358,12 +356,12 @@ function Plan() {
                         type="radio"
                         name="coffee-them"
                         id="wholebean"
-                        onChange={() => setSelectedInput4("wholebean")}
+                        onChange={() => setSelectedInput4("Wholebean")}
                       />
                       <label
                         htmlFor="wholebean"
                         className={
-                          selectedInput4 == "wholebean" ? "selected" : null
+                          selectedInput4 == "Wholebean" ? "selected" : null
                         }
                       >
                         <h3>Wholebean</h3>
@@ -377,12 +375,12 @@ function Plan() {
                         type="radio"
                         name="coffee-them"
                         id="filtere"
-                        onChange={() => setSelectedInput4("filtere")}
+                        onChange={() => setSelectedInput4("Filter")}
                       />
                       <label
                         htmlFor="filtere"
                         className={
-                          selectedInput4 == "filtere" ? "selected" : null
+                          selectedInput4 == "Filter" ? "selected" : null
                         }
                       >
                         <h3>Filter</h3>
@@ -397,12 +395,12 @@ function Plan() {
                         type="radio"
                         name="coffee-them"
                         id="cafetiere"
-                        onChange={() => setSelectedInput4("cafetiere")}
+                        onChange={() => setSelectedInput4("Cafetiére")}
                       />
                       <label
                         htmlFor="cafetiere"
                         className={
-                          selectedInput4 == "cafetiere" ? "selected" : null
+                          selectedInput4 == "Cafetiére" ? "selected" : null
                         }
                       >
                         <h3>Cafetiére</h3>
@@ -434,11 +432,13 @@ function Plan() {
                         type="radio"
                         name="coffee-time"
                         id="week"
-                        onChange={() => setSelectedInput5("week")}
+                        onChange={() => setSelectedInput5("Every Week")}
                       />
                       <label
                         htmlFor="week"
-                        className={selectedInput5 == "week" ? "selected" : null}
+                        className={
+                          selectedInput5 == "Every Week" ? "selected" : null
+                        }
                       >
                         <h3>Every week</h3>
                         <p>
@@ -452,12 +452,12 @@ function Plan() {
                         type="radio"
                         name="coffee-time"
                         id="two-weeks"
-                        onChange={() => setSelectedInput5("two-weeks")}
+                        onChange={() => setSelectedInput5("Every 2 Weeks")}
                       />
                       <label
                         htmlFor="two-weeks"
                         className={
-                          selectedInput5 == "two-weeks" ? "selected" : null
+                          selectedInput5 == "Every 2 Weeks" ? "selected" : null
                         }
                       >
                         <h3>Every 2 weeks</h3>
@@ -471,12 +471,12 @@ function Plan() {
                         type="radio"
                         name="coffee-time"
                         id="month"
-                        onChange={() => setSelectedInput5("month")}
+                        onChange={() => setSelectedInput5("Every Month")}
                       />
                       <label
                         htmlFor="month"
                         className={
-                          selectedInput5 == "month" ? "selected" : null
+                          selectedInput5 == "Every Month" ? "selected" : null
                         }
                       >
                         <h3>Every month</h3>
@@ -496,11 +496,12 @@ function Plan() {
             <div className="order">
               <p>ORDER SUMMARY</p>
               <h2>
-                “I drink my coffee as <span className="d">Filter</span>, with a
-                <span className="d"> Decaf</span> type of bean.{" "}
-                <span className="d"> 250g</span> ground ala{" "}
-                <span className="d"> Cafetiére</span>, sent to me{" "}
-                <span className="d"> Every Week</span>.”
+                “I drink my coffee as
+                <span className="d"> {selectedInput1}</span>, with a
+                <span className="d"> {selectedInput2}</span> type of bean.{" "}
+                <span className="d"> {selectedInput3}</span> ground ala{" "}
+                <span className="d"> {selectedInput4}</span>, sent to me{" "}
+                <span className="d"> {selectedInput5}</span>.”
               </h2>
             </div>
             <div className="button-primary">
