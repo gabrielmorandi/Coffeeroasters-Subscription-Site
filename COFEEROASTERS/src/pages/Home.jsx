@@ -78,35 +78,43 @@ function HomePage() {
             <h2>our collection</h2>
             <div className="card">
               <img src={GranExpresso} alt="Gran Expresso" />
-              <h3>Gran Expresso</h3>
-              <p>
-                Light and flavorful blend with cocoa and black pepper for an
-                intense experience
-              </p>
+              <div className="card-content">
+                <h3>Gran Expresso</h3>
+                <p>
+                  Light and flavorful blend with cocoa and black pepper for an
+                  intense experience
+                </p>
+              </div>
             </div>
             <div className="card">
               <img src={Planalto} alt="Planalto" />
-              <h3>Planalto</h3>
-              <p>
-                Brazilian dark roast with rich and velvety body, and hints of
-                fruits and nuts
-              </p>
+              <div className="card-content">
+                <h3>Planalto</h3>
+                <p>
+                  Brazilian dark roast with rich and velvety body, and hints of
+                  fruits and nuts
+                </p>
+              </div>
             </div>
             <div className="card">
               <img src={Picollo} alt="Picollo" />
-              <h3>Piccollo</h3>
-              <p>
-                Mild and smooth blend featuring notes of toasted almond and
-                dried cherry
-              </p>
+              <div className="card-content">
+                <h3>Piccollo</h3>
+                <p>
+                  Mild and smooth blend featuring notes of toasted almond and
+                  dried cherry
+                </p>
+              </div>
             </div>
             <div className="card">
               <img src={Danche} alt="Danche" />
-              <h3>Danche</h3>
-              <p>
-                Ethiopian hand-harvested blend densely packed with vibrant fruit
-                notes
-              </p>
+              <div className="card-content">
+                <h3>Danche</h3>
+                <p>
+                  Ethiopian hand-harvested blend densely packed with vibrant
+                  fruit notes
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -124,11 +132,13 @@ function HomePage() {
             <div className="why-cards">
               <div className="why-card">
                 <img src={CoffeeBean} alt="Coffee Bean" />
-                <h3>Best quality</h3>
-                <p>
-                  Discover an endless variety of the world’s best artisan coffee
-                  from each of our roasters.
-                </p>
+                <div className="why-card-content">
+                  <h3>Best quality</h3>
+                  <p>
+                    Discover an endless variety of the world’s best artisan
+                    coffee from each of our roasters.
+                  </p>
+                </div>
               </div>
               <div className="why-card">
                 <img src={ExclusiveBenefits} alt="Exclusive benefits" />
@@ -151,7 +161,14 @@ function HomePage() {
         </section>
         <section id="how">
           <div className="container-flex">
-            <h2>How it works</h2>
+            <div className="how-header">
+              <h2>How it works</h2>
+              <div className="items">
+                <div className="item"></div>
+                <div className="item"></div>
+                <div className="item"></div>
+              </div>
+            </div>
             <div className="how-cards">
               <div className="how-card">
                 <span className="how-span">01</span>

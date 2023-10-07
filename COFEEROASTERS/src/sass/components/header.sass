@@ -23,6 +23,8 @@ header
         img
           width: 100%
           max-width: 163px
+          @include m.tablet()
+            max-width: 236px
       button
         display: flex
         border: none
@@ -52,7 +54,6 @@ header
             text-align: center
             font-family: Fraunces
             font-size: 1.5rem
-            font-style: normal
             font-weight: 900
             line-height: 2rem
   .hero
@@ -64,8 +65,12 @@ header
       gap: 1.5rem
       padding: 6.25rem 1.5rem
       background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg")
+      background-repeat: no-repeat
       background-size: cover
       border-radius: 10px
+      @include m.tablet()
+        padding: 6.5rem 3.6rem
+        background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg") !important
       &.about-img
         padding: 6.31rem 1.5rem 5.44rem 1.5rem
         background-image: url("../assets/about/mobile/image-hero-whitecup.jpg")
@@ -82,10 +87,22 @@ header
         font-weight: 900
         line-height: 2.5rem
         text-align: center
+        @include m.tablet()
+          max-width: 400px
+          font-family: Fraunces
+          font-size: 3rem
+          font-weight: 900
+          line-height: 3rem
+          text-align: left !important
       p
         font-size: 0.9375rem
         font-weight: 400
         line-height: 1.5625rem
-        text-align: center
         margin-block-end: .94rem
         opacity: 0.800000011920929
+        text-align: center
+        @include m.tablet()
+          max-width: 420px
+          text-align: left !important
+      .button-primary
+        justify-content: flex-start

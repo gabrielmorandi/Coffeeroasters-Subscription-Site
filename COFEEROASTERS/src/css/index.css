@@ -75,6 +75,11 @@ header nav .container-flex .logo img {
   width: 100%;
   max-width: 163px;
 }
+@media (min-width: 768px) {
+  header nav .container-flex .logo img {
+    max-width: 236px;
+  }
+}
 header nav .container-flex button {
   display: flex;
   border: none;
@@ -114,7 +119,6 @@ header nav .container-flex .menu-mobile .container-flex a {
   text-align: center;
   font-family: Fraunces;
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 900;
   line-height: 2rem;
 }
@@ -128,8 +132,15 @@ header .hero .container-flex {
   gap: 1.5rem;
   padding: 6.25rem 1.5rem;
   background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+}
+@media (min-width: 768px) {
+  header .hero .container-flex {
+    padding: 6.5rem 3.6rem;
+    background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg") !important;
+  }
 }
 header .hero .container-flex.about-img {
   padding: 6.31rem 1.5rem 5.44rem 1.5rem;
@@ -152,13 +163,32 @@ header .hero .container-flex h2 {
   line-height: 2.5rem;
   text-align: center;
 }
+@media (min-width: 768px) {
+  header .hero .container-flex h2 {
+    max-width: 400px;
+    font-family: Fraunces;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
+    text-align: left !important;
+  }
+}
 header .hero .container-flex p {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5625rem;
-  text-align: center;
   margin-block-end: 0.94rem;
   opacity: 0.8000000119;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  header .hero .container-flex p {
+    max-width: 420px;
+    text-align: left !important;
+  }
+}
+header .hero .container-flex .button-primary {
+  justify-content: flex-start;
 }
 
 main {
@@ -197,6 +227,23 @@ main #collection .container-flex h2 {
     font-size: 2.5rem;
   }
 }
+@media (min-width: 768px) {
+  main #collection .container-flex h2 {
+    margin-block-end: -4.5rem;
+    background: linear-gradient(180deg, rgb(131, 136, 143) 0%, #FEFCF7 100%);
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-family: Fraunces;
+    font-size: 5.8rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+  }
+}
 main #collection .container-flex .card {
   width: 100%;
   max-width: 280px;
@@ -205,26 +252,54 @@ main #collection .container-flex .card {
   align-items: center;
   gap: 1.5rem;
 }
+@media (min-width: 768px) {
+  main #collection .container-flex .card {
+    padding-inline-start: 1rem;
+    max-width: 35.8rem;
+    gap: 2.25rem;
+    flex-direction: row;
+  }
+}
 main #collection .container-flex .card img {
   width: 100%;
   max-width: 12.5rem;
 }
-main #collection .container-flex .card h3, main #collection .container-flex .card p {
+@media (min-width: 768px) {
+  main #collection .container-flex .card img {
+    max-width: 16rem;
+  }
+}
+main #collection .container-flex .card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main #collection .container-flex .card .card-content h3, main #collection .container-flex .card .card-content p {
   color: #333D4B;
 }
-main #collection .container-flex .card h3 {
+main #collection .container-flex .card .card-content h3 {
   text-align: center;
   font-family: Fraunces;
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 2rem;
 }
-main #collection .container-flex .card p {
+@media (min-width: 768px) {
+  main #collection .container-flex .card .card-content h3 {
+    text-align: left;
+  }
+}
+main #collection .container-flex .card .card-content p {
   text-align: center;
   font-family: Barlow;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5625rem;
+}
+@media (min-width: 768px) {
+  main #collection .container-flex .card .card-content p {
+    text-align: left;
+  }
 }
 main #why {
   width: 100%;
@@ -242,6 +317,11 @@ main #why .container-flex .why-header {
   border-radius: 10px 10px 0 0;
   padding: 4rem 1.5rem 1.75rem 1.5rem;
   gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  main #why .container-flex .why-header h2, main #why .container-flex .why-header p {
+    width: 80%;
+  }
 }
 main #why .container-flex .why-header h2, main #why .container-flex .why-header p {
   color: #FEFCF7;
@@ -280,32 +360,62 @@ main #why .container-flex .why-cards::before {
   border-radius: 0 0 10px 10px;
   background-color: #414f5a;
 }
+@media (min-width: 768px) {
+  main #why .container-flex .why-cards::before {
+    background-color: #2c343e;
+  }
+}
 main #why .container-flex .why-cards .why-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4.5rem 0.75rem 3rem 0.75rem;
+  padding: 4.5rem 0.75rem 3rem;
   gap: 1.5rem;
   width: 100%;
   background-color: #0E8784;
   border-radius: 10px;
+}
+@media (min-width: 768px) {
+  main #why .container-flex .why-cards .why-card {
+    padding: 2.56rem 3rem 2.56rem 4.38rem;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 main #why .container-flex .why-cards .why-card img {
   width: 100%;
   max-width: 4.5rem;
   margin-bottom: 2rem;
 }
-main #why .container-flex .why-cards .why-card h3, main #why .container-flex .why-cards .why-card p {
+@media (min-width: 768px) {
+  main #why .container-flex .why-cards .why-card img {
+    max-width: 3.5rem;
+    margin: 0;
+  }
+}
+main #why .container-flex .why-cards .why-card .why-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main #why .container-flex .why-cards .why-card .why-card-content h3, main #why .container-flex .why-cards .why-card .why-card-content p {
   color: #FEFCF7;
 }
-main #why .container-flex .why-cards .why-card h3 {
+main #why .container-flex .why-cards .why-card .why-card-content h3 {
   text-align: center;
   font-family: Fraunces;
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 2rem;
 }
-main #why .container-flex .why-cards .why-card p {
+@media (min-width: 768px) {
+  main #why .container-flex .why-cards .why-card .why-card-content h3 {
+    text-align: left;
+  }
+}
+main #why .container-flex .why-cards .why-card .why-card-content p {
   width: 100%;
   max-width: 13.25rem;
   text-align: center;
@@ -313,6 +423,15 @@ main #why .container-flex .why-cards .why-card p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.625rem;
+}
+@media (min-width: 768px) {
+  main #why .container-flex .why-cards .why-card .why-card-content p {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    text-align: left;
+    max-width: 21.5rem;
+  }
 }
 main #how {
   width: 100%;
@@ -323,13 +442,49 @@ main #how .container-flex {
   flex-direction: column;
   gap: 5rem;
 }
-main #how .container-flex h2 {
+main #how .container-flex .how-header {
+  display: flex;
+  flex-direction: column;
+}
+main #how .container-flex .how-header h2 {
   text-align: center;
   font-family: Fraunces;
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 2rem;
   color: #83888F;
+}
+@media (min-width: 768px) {
+  main #how .container-flex .how-header h2 {
+    text-align: left;
+  }
+}
+main #how .container-flex .how-header .items {
+  display: flex;
+  gap: 12.62rem;
+  position: relative;
+  display: flex;
+  max-width: min-content;
+}
+main #how .container-flex .how-header .items::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background-color: #FDD6BA;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+main #how .container-flex .how-header .items .item {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: #FEFCF7;
+  border-radius: 50%;
+  border: 2px solid #0E8784;
+  margin-block: 2.5rem;
 }
 main #how .container-flex .how-cards {
   display: flex;
@@ -619,7 +774,6 @@ main #create-plan .container-flex .order h2 {
   color: #FFF;
   font-family: Fraunces;
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 900;
   line-height: 2.5rem;
 }
@@ -627,7 +781,6 @@ main #create-plan .container-flex .order .d {
   color: #0E8784;
   font-family: Fraunces;
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 900;
   line-height: 2.5rem;
 }
