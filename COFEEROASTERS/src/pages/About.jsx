@@ -1,16 +1,14 @@
 import React from "react"
 
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-import LogoWhite from "../assets/shared/desktop/logo-white.svg"
 import Commitment from "../assets/about/mobile/image-commitment.jpg"
+import CommitmentTablet from "../assets/about/tablet/image-commitment.jpg"
 import Quality from "../assets/about/mobile/image-quality.jpg"
 import UK from "../assets/about/desktop/illustration-uk.svg"
 import Australia from "../assets/about/desktop/illustration-australia.svg"
 import Canada from "../assets/about/desktop/illustration-canada.svg"
-import Facebook from "../assets/shared/desktop/icon-facebook.svg"
-import Twitter from "../assets/shared/desktop/icon-twitter.svg"
-import Instagram from "../assets/shared/desktop/icon-instagram.svg"
 
 function AboutPage() {
   return (
@@ -20,22 +18,27 @@ function AboutPage() {
         <section id="commitment">
           <div className="container-flex">
             <div className="our">
-              <img src={Commitment} alt="Our commitment" />
-              <h2>Our Commitment</h2>
-              <p>
-                We’re built on a simple mission and a commitment to doing good
-                along the way. We want to make it easy for you to discover and
-                brew the world’s best coffee at home. It all starts at the
-                source. To locate the specific lots we want to purchase, we
-                travel nearly 60 days a year trying to understand the challenges
-                and opportunities in each of these places. We collaborate with
-                exceptional coffee growers and empower a global community of
-                farmers through with well above fair-trade benchmarks. We also
-                offer training, support farm community initiatives, and invest
-                in coffee plant science. Curating only the finest blends, we
-                roast each lot to highlight tasting profiles distinctive to
-                their native growing region.
-              </p>
+              <picture>
+                <source srcset={CommitmentTablet} media="(min-width: 768px)" />
+                <img src={Commitment} alt="Our commitment" />
+              </picture>
+              <div className="our-content">
+                <h2>Our Commitment</h2>
+                <p>
+                  We’re built on a simple mission and a commitment to doing good
+                  along the way. We want to make it easy for you to discover and
+                  brew the world’s best coffee at home. It all starts at the
+                  source. To locate the specific lots we want to purchase, we
+                  travel nearly 60 days a year trying to understand the
+                  challenges and opportunities in each of these places. We
+                  collaborate with exceptional coffee growers and empower a
+                  global community of farmers through with well above fair-trade
+                  benchmarks. We also offer training, support farm community
+                  initiatives, and invest in coffee plant science. Curating only
+                  the finest blends, we roast each lot to highlight tasting
+                  profiles distinctive to their native growing region.
+                </p>
+              </div>
             </div>
             <div className="quality"></div>
           </div>
@@ -90,29 +93,7 @@ function AboutPage() {
           </div>
         </section>
       </main>
-      <footer>
-        <div className="container-flex">
-          <div className="logo">
-            <img src={LogoWhite} alt="Coffeeroasters" />
-          </div>
-          <div className="menu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Create Your Plan</a>
-          </div>
-          <div className="socials">
-            <a href="#">
-              <img src={Facebook} alt="Facebook" />
-            </a>
-            <a href="#">
-              <img src={Twitter} alt="Twitter" />
-            </a>
-            <a href="#">
-              <img src={Instagram} alt="Instagram" />
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }
