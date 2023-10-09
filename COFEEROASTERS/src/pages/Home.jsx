@@ -142,19 +142,23 @@ function HomePage() {
               </div>
               <div className="why-card">
                 <img src={ExclusiveBenefits} alt="Exclusive benefits" />
-                <h3>Exclusive benefits</h3>
-                <p>
-                  Special offers and swag when you subscribe, including 30% off
-                  your first shipment.
-                </p>
+                <div className="why-card-content">
+                  <h3>Exclusive benefits</h3>
+                  <p>
+                    Special offers and swag when you subscribe, including 30%
+                    off your first shipment.
+                  </p>
+                </div>
               </div>
               <div className="why-card">
                 <img src={FreeShipping} alt="Free shipping" />
-                <h3>Free shipping</h3>
-                <p>
-                  We cover the cost and coffee is delivered fast. Peak
-                  freshness: guaranteed.
-                </p>
+                <div className="why-card-content">
+                  <h3>Free shipping</h3>
+                  <p>
+                    We cover the cost and coffee is delivered fast. Peak
+                    freshness: guaranteed.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
