@@ -478,14 +478,14 @@ main #how .container-flex .how-header h2 {
 }
 main #how .container-flex .how-header .items {
   display: none;
-  gap: 13.5rem;
-  position: relative;
-  display: flex;
-  max-width: min-content;
 }
 @media (min-width: 768px) {
   main #how .container-flex .how-header .items {
     display: flex;
+    gap: 13.5rem;
+    position: relative;
+    display: flex;
+    max-width: min-content;
   }
   main #how .container-flex .how-header .items::after {
     content: "";
@@ -517,7 +517,7 @@ main #how .container-flex .how-cards {
 @media (min-width: 768px) {
   main #how .container-flex .how-cards {
     flex-direction: row;
-    gap: 1.25rem;
+    gap: 10px;
   }
 }
 main #how .container-flex .how-cards .how-card {
@@ -784,12 +784,64 @@ main #plans .container-flex {
   flex-direction: column;
   gap: 3.5rem;
 }
-main #plans .container-flex .plan {
+@media (min-width: 768px) {
+  main #plans .container-flex {
+    gap: 3.5rem;
+  }
+}
+main #plans .container-flex .items {
+  display: none;
+}
+@media (min-width: 768px) {
+  main #plans .container-flex .items {
+    display: flex;
+    gap: 13.5rem;
+    position: relative;
+    display: flex;
+    max-width: min-content;
+  }
+  main #plans .container-flex .items::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: #FDD6BA;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  main #plans .container-flex .items .item {
+    display: flex;
+    width: 31px;
+    height: 31px;
+    background: #293039;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+    z-index: 1000000;
+  }
+}
+main #plans .container-flex .plans {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-main #plans .container-flex .plan h2 {
+@media (min-width: 768px) {
+  main #plans .container-flex .plans {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+main #plans .container-flex .plans .plan {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  main #plans .container-flex .plans .plan {
+    gap: 2.5rem;
+  }
+}
+main #plans .container-flex .plans h2 {
   color: #FDD6BA;
   text-align: center;
   font-family: Fraunces;
@@ -797,7 +849,12 @@ main #plans .container-flex .plan h2 {
   font-weight: 900;
   line-height: 4.5rem;
 }
-main #plans .container-flex .plan h3 {
+@media (min-width: 768px) {
+  main #plans .container-flex .plans h2 {
+    text-align: left;
+  }
+}
+main #plans .container-flex .plans h3 {
   color: #FFF;
   text-align: center;
   font-family: Fraunces;
@@ -805,13 +862,23 @@ main #plans .container-flex .plan h3 {
   font-weight: 900;
   line-height: 2rem;
 }
-main #plans .container-flex .plan p {
+@media (min-width: 768px) {
+  main #plans .container-flex .plans h3 {
+    text-align: left;
+  }
+}
+main #plans .container-flex .plans p {
   color: #FFF;
   text-align: center;
   font-family: Barlow;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5625rem;
+}
+@media (min-width: 768px) {
+  main #plans .container-flex .plans p {
+    text-align: left;
+  }
 }
 main #make-plan {
   width: 100%;

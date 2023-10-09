@@ -2,12 +2,9 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-import LogoWhite from "../assets/shared/desktop/logo-white.svg"
 import Arrow from "../assets/plan/desktop/icon-arrow.svg"
-import Facebook from "../assets/shared/desktop/icon-facebook.svg"
-import Twitter from "../assets/shared/desktop/icon-twitter.svg"
-import Instagram from "../assets/shared/desktop/icon-instagram.svg"
 
 function Plan() {
   const [select1, setSelect1] = useState(true)
@@ -31,32 +28,40 @@ function Plan() {
       <main>
         <section id="plans">
           <div className="container-flex">
-            <div className="plan">
-              <h2>01</h2>
-              <h3>Pick your coffee</h3>
-              <p>
-                Select from our evolving range of artisan coffees. Our beans are
-                ethically sourced and we pay fair prices for them. There are new
-                coffees in all profiles every month for you to try out.
-              </p>
+            <div className="items">
+              <div className="item"></div>
+              <div className="item"></div>
+              <div className="item"></div>
             </div>
-            <div className="plan">
-              <h2>02</h2>
-              <h3>Choose the frequency</h3>
-              <p>
-                Customize your order frequency, quantity, even your roast style
-                and grind type. Pause, skip or cancel your subscription with no
-                commitment through our online portal.
-              </p>
-            </div>
-            <div className="plan">
-              <h2>03</h2>
-              <h3>Receive and enjoy!</h3>
-              <p>
-                We ship your package within 48 hours, freshly roasted. Sit back
-                and enjoy award-winning world-class coffees curated to provide a
-                distinct tasting experience.
-              </p>
+            <div className="plans">
+              <div className="plan">
+                <h2>01</h2>
+                <h3>Pick your coffee</h3>
+                <p>
+                  Select from our evolving range of artisan coffees. Our beans
+                  are ethically sourced and we pay fair prices for them. There
+                  are new coffees in all profiles every month for you to try
+                  out.
+                </p>
+              </div>
+              <div className="plan">
+                <h2>02</h2>
+                <h3>Choose the frequency</h3>
+                <p>
+                  Customize your order frequency, quantity, even your roast
+                  style and grind type. Pause, skip or cancel your subscription
+                  with no commitment through our online portal.
+                </p>
+              </div>
+              <div className="plan">
+                <h2>03</h2>
+                <h3>Receive and enjoy!</h3>
+                <p>
+                  We ship your package within 48 hours, freshly roasted. Sit
+                  back and enjoy award-winning world-class coffees curated to
+                  provide a distinct tasting experience.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -465,29 +470,7 @@ function Plan() {
           </div>
         </section>
       </main>
-      <footer>
-        <div className="container-flex">
-          <div className="logo">
-            <img src={LogoWhite} alt="Coffeeroasters" />
-          </div>
-          <div className="menu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Create Your Plan</a>
-          </div>
-          <div className="socials">
-            <a href="#">
-              <img src={Facebook} alt="Facebook" />
-            </a>
-            <a href="#">
-              <img src={Twitter} alt="Twitter" />
-            </a>
-            <a href="#">
-              <img src={Instagram} alt="Instagram" />
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }
