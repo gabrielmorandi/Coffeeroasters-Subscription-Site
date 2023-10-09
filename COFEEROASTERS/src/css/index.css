@@ -716,14 +716,35 @@ main #headquarters .container-flex h2 {
   font-weight: 900;
   line-height: 2rem;
 }
-main #headquarters .container-flex .headquarters-card {
+@media (min-width: 768px) {
+  main #headquarters .container-flex h2 {
+    text-align: left;
+  }
+}
+main #headquarters .container-flex .headquarters-cards {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 5rem;
+}
+@media (min-width: 768px) {
+  main #headquarters .container-flex .headquarters-cards {
+    flex-direction: row;
+    margin-block-start: 4.5rem;
+    gap: 10px;
+  }
+}
+main #headquarters .container-flex .headquarters-cards .headquarters-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-start: 5rem;
   gap: 1.33rem;
 }
-main #headquarters .container-flex .headquarters-card h2 {
+@media (min-width: 768px) {
+  main #headquarters .container-flex .headquarters-cards .headquarters-card {
+    align-items: flex-start;
+  }
+}
+main #headquarters .container-flex .headquarters-cards .headquarters-card h2 {
   color: #333D4B;
   text-align: center;
   font-family: Fraunces;
@@ -731,13 +752,25 @@ main #headquarters .container-flex .headquarters-card h2 {
   font-weight: 900;
   line-height: 2.25rem;
 }
-main #headquarters .container-flex .headquarters-card p {
+@media (min-width: 768px) {
+  main #headquarters .container-flex .headquarters-cards .headquarters-card h2 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+}
+main #headquarters .container-flex .headquarters-cards .headquarters-card p {
   color: #333D4B;
   text-align: center;
   font-family: Barlow;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.625rem;
+}
+@media (min-width: 768px) {
+  main #headquarters .container-flex .headquarters-cards .headquarters-card p {
+    text-align: left;
+    width: 13.875rem;
+  }
 }
 main #plans {
   width: 100%;

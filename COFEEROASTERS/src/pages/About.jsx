@@ -60,35 +60,37 @@ function AboutPage() {
         <section id="headquarters">
           <div className="container-flex">
             <h2>Our headquarters</h2>
-            <div className="headquarters-card">
-              <img src={UK} alt="United Kingdom" />
-              <h2>United Kingdom</h2>
-              <p>
-                68 Asfordby Rd <br />
-                Alcaston <br />
-                SY6 1YA <br />
-                +44 1241 918425
-              </p>
-            </div>
-            <div className="headquarters-card">
-              <img src={Canada} alt="Canada" />
-              <h2>Candada</h2>
-              <p>
-                1528 Eglinton Avenue <br />
-                Toronto <br />
-                Ontario M4P 1A6 <br />
-                +1 416 485 2997
-              </p>
-            </div>
-            <div className="headquarters-card">
-              <img src={Australia} alt="Australia" />
-              <h2>Australia</h2>
-              <p>
-                36 Swanston Street <br />
-                Kewell <br />
-                Victoria <br />
-                +61 4 9928 3629
-              </p>
+            <div className="headquarters-cards">
+              <div className="headquarters-card">
+                <img src={UK} alt="United Kingdom" />
+                <h2>United Kingdom</h2>
+                <p>
+                  68 Asfordby Rd <br />
+                  Alcaston <br />
+                  SY6 1YA <br />
+                  +44 1241 918425
+                </p>
+              </div>
+              <div className="headquarters-card">
+                <img src={Canada} alt="Canada" />
+                <h2>Candada</h2>
+                <p>
+                  1528 Eglinton Avenue <br />
+                  Toronto <br />
+                  Ontario M4P 1A6 <br />
+                  +1 416 485 2997
+                </p>
+              </div>
+              <div className="headquarters-card">
+                <img src={Australia} alt="Australia" />
+                <h2>Australia</h2>
+                <p>
+                  36 Swanston Street <br />
+                  Kewell <br />
+                  Victoria <br />
+                  +61 4 9928 3629
+                </p>
+              </div>
             </div>
           </div>
         </section>
