@@ -499,7 +499,9 @@ main
     display: grid
     place-items: center
     .container-flex
+      justify-content: center
       form
+        width: 100%
         display: flex
         flex-direction: column
         gap: 6rem
@@ -518,6 +520,10 @@ main
               font-size: 1.5rem
               font-weight: 900
               line-height: 1.75rem
+              @include m.tablet()
+                color: #83888F
+                font-size: 2rem
+                line-height: 3rem
             img.invert-arrow
               rotate: -180deg
         .select-content
@@ -525,6 +531,8 @@ main
           flex-direction: column
           width: 100%
           gap: 1.5rem
+          @include m.tablet()
+            flex-direction: row
           .radio
             input
               display: none
@@ -535,6 +543,9 @@ main
               background-color: #F4F1EB
               border-radius: .5rem
               gap: .5rem
+              @include m.tablet()
+                padding: 2rem 1.55rem
+                min-height: 14rem
               &.selected
                 background-color: #0E8784
                 h3, p
@@ -564,6 +575,8 @@ main
         background-color: #272e37
         padding: 1.5rem
         border-radius: .5rem
+        @include m.tablet()
+          padding: 2rem 2rem
         p
           color: #FFF
           font-family: Barlow

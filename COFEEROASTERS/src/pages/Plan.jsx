@@ -227,7 +227,7 @@ function Plan() {
                   className="select-header"
                   onClick={() => setSelect3(!select3)}
                 >
-                  <h2>What type of coffee?</h2>
+                  <h2>How much would you like?</h2>
                   <img
                     src={Arrow}
                     alt="Arrow"
