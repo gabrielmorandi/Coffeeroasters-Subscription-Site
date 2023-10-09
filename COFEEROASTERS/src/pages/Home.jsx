@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-import LogoWhite from "../assets/shared/desktop/logo-white.svg"
 import GranExpresso from "../assets/home/desktop/image-gran-espresso.png"
 import Planalto from "../assets/home/desktop/image-planalto.png"
 import Picollo from "../assets/home/desktop/image-piccollo.png"
@@ -11,9 +11,6 @@ import Danche from "../assets/home/desktop/image-danche.png"
 import CoffeeBean from "../assets/home/desktop/icon-coffee-bean.svg"
 import ExclusiveBenefits from "../assets/home/desktop/icon-gift.svg"
 import FreeShipping from "../assets/home/desktop/icon-truck.svg"
-import Facebook from "../assets/shared/desktop/icon-facebook.svg"
-import Twitter from "../assets/shared/desktop/icon-twitter.svg"
-import Instagram from "../assets/shared/desktop/icon-instagram.svg"
 
 function HomePage() {
   return (
@@ -158,29 +155,7 @@ function HomePage() {
           </div>
         </section>
       </main>
-      <footer>
-        <div className="container-flex">
-          <div className="logo">
-            <img src={LogoWhite} alt="Coffeeroasters" />
-          </div>
-          <div className="menu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Create Your Plan</a>
-          </div>
-          <div className="socials">
-            <a href="#">
-              <img src={Facebook} alt="Facebook" />
-            </a>
-            <a href="#">
-              <img src={Twitter} alt="Twitter" />
-            </a>
-            <a href="#">
-              <img src={Instagram} alt="Instagram" />
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }
