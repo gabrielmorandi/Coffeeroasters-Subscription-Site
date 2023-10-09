@@ -12,12 +12,12 @@ body {
 
 .container-flex {
   width: 87%;
-  max-width: 1100px;
+  max-width: 1280px;
   display: flex;
 }
 .container-grid {
   width: 87%;
-  max-width: 1100px;
+  max-width: 1280px;
   display: grid;
 }
 
@@ -85,13 +85,29 @@ header nav .container-flex button {
   border: none;
   background-color: transparent;
 }
+@media (min-width: 1024px) {
+  header nav .container-flex button {
+    display: none;
+  }
+}
 header nav .container-flex .menu-desktop {
   display: none;
 }
 @media (min-width: 1024px) {
   header nav .container-flex .menu-desktop {
     display: flex;
+    gap: 2rem;
   }
+}
+header nav .container-flex .menu-desktop a {
+  width: max-content;
+  color: #83888F;
+  font-family: Barlow;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.9375rem;
+  letter-spacing: 0.05769rem;
+  text-transform: uppercase;
 }
 header nav .container-flex .menu-mobile {
   position: absolute;
@@ -142,14 +158,29 @@ header .hero .container-flex {
     background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg") !important;
   }
 }
+@media (min-width: 1024px) {
+  header .hero .container-flex {
+    padding: 7.3rem 5.3rem;
+    gap: 2rem;
+    background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg") !important;
+    background-size: cover;
+    background-position-x: right;
+  }
+}
 header .hero .container-flex.about-img {
   padding: 6.31rem 1.5rem 5.44rem 1.5rem;
   background-image: url("../assets/about/mobile/image-hero-whitecup.jpg") !important;
 }
 @media (min-width: 768px) {
   header .hero .container-flex.about-img {
-    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg") !important;
     padding: 7.37rem 3.62rem;
+    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg") !important;
+  }
+}
+@media (min-width: 1024px) {
+  header .hero .container-flex.about-img {
+    padding: 8.5rem 5.3rem;
+    background-image: url("../assets/about/desktop/image-hero-whitecup.jpg") !important;
   }
 }
 header .hero .container-flex.about-img h2 {
@@ -161,8 +192,14 @@ header .hero .container-flex.plan-img {
 }
 @media (min-width: 768px) {
   header .hero .container-flex.plan-img {
-    background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg") !important;
     padding: 7.37rem 3.62rem;
+    background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg") !important;
+  }
+}
+@media (min-width: 1024px) {
+  header .hero .container-flex.plan-img {
+    padding: 8.3rem 5.3rem;
+    background-image: url("../assets/plan/desktop/image-hero-blackcup.jpg") !important;
   }
 }
 header .hero .container-flex h2, header .hero .container-flex p {
@@ -185,6 +222,13 @@ header .hero .container-flex h2 {
     text-align: left !important;
   }
 }
+@media (min-width: 768px) and (min-width: 1024px) {
+  header .hero .container-flex h2 {
+    max-width: 31rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
 header .hero .container-flex p {
   font-size: 0.9375rem;
   font-weight: 400;
@@ -199,7 +243,16 @@ header .hero .container-flex p {
     text-align: left !important;
   }
 }
+@media (min-width: 1024px) {
+  header .hero .container-flex p {
+    max-width: 27.8rem;
+    color: #FEFCF7;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
 header .hero .container-flex .button-primary {
+  padding-block-start: 1.5rem;
   justify-content: flex-start;
 }
 

@@ -29,10 +29,22 @@ header
         display: flex
         border: none
         background-color: transparent
+        @include m.desktop()
+          display: none
       .menu-desktop
         display: none
         @include m.desktop()
           display: flex
+          gap: 2rem
+        a
+          width: max-content
+          color: #83888F
+          font-family: Barlow
+          font-size: 0.75rem
+          font-weight: 700
+          line-height: 0.9375rem
+          letter-spacing: 0.05769rem
+          text-transform: uppercase
       .menu-mobile
         position: absolute
         display: flex
@@ -71,20 +83,32 @@ header
       @include m.tablet()
         padding: 6.5rem 3.6rem
         background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg") !important
+      @include m.desktop()
+        padding: 7.3rem 5.3rem
+        gap: 2rem
+        background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg") !important
+        background-size: cover
+        background-position-x: right
       &.about-img
         padding: 6.31rem 1.5rem 5.44rem 1.5rem
         background-image: url("../assets/about/mobile/image-hero-whitecup.jpg") !important
         @include m.tablet()
-          background-image: url("../assets/about/tablet/image-hero-whitecup.jpg") !important
           padding: 7.37rem 3.62rem
+          background-image: url("../assets/about/tablet/image-hero-whitecup.jpg") !important
+        @include m.desktop()
+          padding: 8.5rem 5.3rem
+          background-image: url("../assets/about/desktop/image-hero-whitecup.jpg") !important
         h2
           font-size: 1.75rem
       &.plan-img
         padding: 6.94rem 1.5rem 8.5rem 1.5rem
         background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg") !important
         @include m.tablet()
-          background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg") !important
           padding: 7.37rem 3.62rem
+          background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg") !important
+        @include m.desktop()
+          padding: 8.3rem 5.3rem
+          background-image: url("../assets/plan/desktop/image-hero-blackcup.jpg") !important
       h2, p
         color: v.$light
       h2
@@ -100,6 +124,10 @@ header
           font-weight: 900
           line-height: 3rem
           text-align: left !important
+          @include m.desktop()
+            max-width: 31rem
+            font-size: 4.5rem
+            line-height: 4.5rem
       p
         font-size: 0.9375rem
         font-weight: 400
@@ -110,5 +138,11 @@ header
         @include m.tablet()
           max-width: 420px
           text-align: left !important
+        @include m.desktop()
+          max-width: 27.8rem
+          color: #FEFCF7
+          font-size: 1rem
+          line-height: 1.625rem
       .button-primary
+        padding-block-start: 1.5rem
         justify-content: flex-start

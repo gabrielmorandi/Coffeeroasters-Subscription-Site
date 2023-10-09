@@ -56,12 +56,35 @@ const Header = ({ type }) => {
               : null
           }
         >
-          <h2>Great coffee made simple.</h2>
-          <p>
-            Start your mornings with the world’s best coffees. Try our expertly
-            curated artisan coffees from our best roasters delivered directly to
-            your door, at your schedule.
-          </p>
+          {type === "home" ? (
+            <>
+              <h2>Great coffee made simple.</h2>
+              <p>
+                Start your mornings with the world’s best coffees. Try our
+                expertly curated artisan coffees from our best roasters
+                delivered directly to your door, at your schedule.
+              </p>
+            </>
+          ) : type === "about" ? (
+            <>
+              <h2>About Us</h2>
+              <p>
+                Coffeeroasters began its journey of exotic discovery in 1999,
+                highlighting stories of coffee from around the world. We have
+                since been dedicated to bring the perfect cup - from bean to
+                brew - in every shipment.
+              </p>
+            </>
+          ) : type === "plan" ? (
+            <>
+              <h2>Create plan</h2>
+              <p>
+                Coffee the way you wanted it to be. For coffee delivered
+                tomorrow, or next week. For whatever brew method you use. For
+                choice, for convenience, for quality.
+              </p>
+            </>
+          ) : null}
           {type === "home" ? (
             <div className="button-primary">
               <Link to={"/plan"}>
