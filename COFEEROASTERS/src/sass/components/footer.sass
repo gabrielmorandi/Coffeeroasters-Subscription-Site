@@ -1,21 +1,29 @@
 @use '../abstracts/v'
+@use '../abstracts/m'
 
 footer
   width: 100%
   display: grid
   place-items: center
   padding-block: 5rem 4.5rem
+  @include m.tablet()
+    padding-block-start: 9rem
   .container-flex
     flex-direction: column
     align-items: center
     background-color: v.$grey-blue
     gap: 3rem
     padding-block: 3.37rem
+    @include m.tablet()
+      gap: 2rem
     .menu
       display: flex
       flex-direction: column
       align-items: center
       gap: 1.5rem
+      @include m.tablet()
+        flex-direction: row
+        gap: 2rem
       a
         font-family: Barlow
         font-size: 0.75rem
