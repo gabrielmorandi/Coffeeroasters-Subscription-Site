@@ -73,12 +73,18 @@ header
         background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg") !important
       &.about-img
         padding: 6.31rem 1.5rem 5.44rem 1.5rem
-        background-image: url("../assets/about/mobile/image-hero-whitecup.jpg")
+        background-image: url("../assets/about/mobile/image-hero-whitecup.jpg") !important
+        @include m.tablet()
+          background-image: url("../assets/about/tablet/image-hero-whitecup.jpg") !important
+          padding: 7.37rem 3.62rem
         h2
           font-size: 1.75rem
       &.plan-img
         padding: 6.94rem 1.5rem 8.5rem 1.5rem
-        background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg")
+        background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg") !important
+        @include m.tablet()
+          background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg") !important
+          padding: 7.37rem 3.62rem
       h2, p
         color: v.$light
       h2

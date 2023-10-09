@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import React from "react"
 
-import Logo from "../assets/shared/desktop/logo.svg"
+import Header from "../components/Header"
+
 import LogoWhite from "../assets/shared/desktop/logo-white.svg"
-import MenuIcon from "../assets/shared/mobile/icon-hamburger.svg"
 import Commitment from "../assets/about/mobile/image-commitment.jpg"
 import Quality from "../assets/about/mobile/image-quality.jpg"
 import UK from "../assets/about/desktop/illustration-uk.svg"
@@ -14,58 +13,9 @@ import Twitter from "../assets/shared/desktop/icon-twitter.svg"
 import Instagram from "../assets/shared/desktop/icon-instagram.svg"
 
 function AboutPage() {
-  const [menuIsOpen, setMenuIsOpen] = useState(false)
-
-  useEffect(() => {
-    if (menuIsOpen) {
-      document.body.style.overflow = "hidden"
-      window.scrollTo(0, 0)
-    } else {
-      document.body.style.overflow = "auto"
-    }
-  }, [menuIsOpen])
-
   return (
     <>
-      <header>
-        <nav>
-          <div className="container-flex">
-            <div className="logo">
-              <Link to="/">
-                <img src={Logo} alt="Coffeeroasters" />
-              </Link>
-              <button onClick={() => setMenuIsOpen(!menuIsOpen)}>
-                <img src={MenuIcon} alt="Menu" />
-              </button>
-            </div>
-            <div className="menu-desktop">
-              <Link to="/">Home</Link>
-              <Link to="/about">About Us</Link>
-              <Link to="/plan">Create Your Plan</Link>
-            </div>
-            {menuIsOpen && (
-              <div className="menu-mobile">
-                <div className="container-flex">
-                  <Link to="/">Home</Link>
-                  <Link to="/about">About Us</Link>
-                  <Link to="/plan">Create Your Plan</Link>
-                </div>
-              </div>
-            )}
-          </div>
-        </nav>
-        <div className="hero">
-          <div className="container-flex about-img">
-            <h2>About Us</h2>
-            <p>
-              Coffeeroasters began its journey of exotic discovery in 1999,
-              highlighting stories of coffee from around the world. We have
-              since been dedicated to bring the perfect cup - from bean to brew
-              - in every shipment.
-            </p>
-          </div>
-        </div>
-      </header>
+      <Header type="about" />
       <main>
         <section id="commitment">
           <div className="container-flex">

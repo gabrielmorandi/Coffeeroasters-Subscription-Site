@@ -144,14 +144,26 @@ header .hero .container-flex {
 }
 header .hero .container-flex.about-img {
   padding: 6.31rem 1.5rem 5.44rem 1.5rem;
-  background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+  background-image: url("../assets/about/mobile/image-hero-whitecup.jpg") !important;
+}
+@media (min-width: 768px) {
+  header .hero .container-flex.about-img {
+    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg") !important;
+    padding: 7.37rem 3.62rem;
+  }
 }
 header .hero .container-flex.about-img h2 {
   font-size: 1.75rem;
 }
 header .hero .container-flex.plan-img {
   padding: 6.94rem 1.5rem 8.5rem 1.5rem;
-  background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg");
+  background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg") !important;
+}
+@media (min-width: 768px) {
+  header .hero .container-flex.plan-img {
+    background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg") !important;
+    padding: 7.37rem 3.62rem;
+  }
 }
 header .hero .container-flex h2, header .hero .container-flex p {
   color: #FEFCF7;
