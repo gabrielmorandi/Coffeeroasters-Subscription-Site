@@ -272,6 +272,14 @@ main #collection .container-flex {
   align-items: center;
   gap: 3rem;
 }
+@media (min-width: 1024px) {
+  main #collection .container-flex {
+    max-width: 1111px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 main #collection .container-flex h2 {
   width: 100%;
   text-align: center;
@@ -279,7 +287,7 @@ main #collection .container-flex h2 {
   font-size: 2rem;
   font-weight: 900;
   line-height: 4.5rem;
-  background: linear-gradient(180deg, rgb(131, 136, 143) 0%, #FEFCF7 80%);
+  background: linear-gradient(180deg, rgb(131, 136, 143) -25%, #FEFCF7 80%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -295,7 +303,7 @@ main #collection .container-flex h2 {
 @media (min-width: 768px) {
   main #collection .container-flex h2 {
     margin-block-end: -4.5rem;
-    background: linear-gradient(180deg, rgb(131, 136, 143) 0%, #FEFCF7 100%);
+    background: linear-gradient(180deg, rgb(131, 136, 143) -100%, #FEFCF7 100%);
     text-align: center;
     color: transparent;
     background-clip: text;
@@ -303,10 +311,25 @@ main #collection .container-flex h2 {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    font-family: Fraunces;
     font-size: 5.8rem;
-    font-weight: 900;
-    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main #collection .container-flex h2 {
+    margin-block-end: -5.5rem;
+    width: 100%;
+    max-width: 1111px;
+    color: #83888F;
+    background: linear-gradient(180deg, rgb(131, 136, 143) -200%, #FEFCF7 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    font-size: 9.375rem;
+    line-height: 100%;
   }
 }
 main #collection .container-flex .card {
@@ -323,6 +346,12 @@ main #collection .container-flex .card {
     max-width: 35.8rem;
     gap: 2.25rem;
     flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  main #collection .container-flex .card {
+    max-width: 255px;
+    flex-direction: column;
   }
 }
 main #collection .container-flex .card img {
@@ -354,6 +383,11 @@ main #collection .container-flex .card .card-content h3 {
     text-align: left;
   }
 }
+@media (min-width: 1024px) {
+  main #collection .container-flex .card .card-content h3 {
+    text-align: center;
+  }
+}
 main #collection .container-flex .card .card-content p {
   text-align: center;
   font-family: Barlow;
@@ -364,6 +398,11 @@ main #collection .container-flex .card .card-content p {
 @media (min-width: 768px) {
   main #collection .container-flex .card .card-content p {
     text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  main #collection .container-flex .card .card-content p {
+    text-align: center;
   }
 }
 main #why {

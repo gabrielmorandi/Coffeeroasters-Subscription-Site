@@ -14,6 +14,11 @@ main
       flex-direction: column
       align-items: center
       gap: 3rem
+      @include m.desktop()
+        max-width: 1111px
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 30px
       h2
         width: 100%
         text-align: center
@@ -21,7 +26,7 @@ main
         font-size: 2rem
         font-weight: 900
         line-height: 4.5rem
-        background: linear-gradient(180deg, rgba(131, 136, 143, 1) 0%, #FEFCF7 80%)
+        background: linear-gradient(180deg, rgba(131, 136, 143, 1) -25%, #FEFCF7 80%)
         color: transparent
         background-clip: text
         -webkit-background-clip: text
@@ -32,7 +37,7 @@ main
           font-size: 2.5rem
         @include m.tablet()
           margin-block-end: -4.5rem
-          background: linear-gradient(180deg, rgba(131, 136, 143, 1) 0%, #FEFCF7 100%)
+          background: linear-gradient(180deg, rgba(131, 136, 143, 1) -100%, #FEFCF7 100%)
           text-align: center
           color: transparent
           background-clip: text
@@ -40,10 +45,22 @@ main
           -webkit-text-fill-color: transparent
           -moz-background-clip: text
           -moz-text-fill-color: transparent
-          font-family: Fraunces
           font-size: 5.8rem
-          font-weight: 900
-          line-height: 4.5rem
+        @include m.desktop()
+          margin-block-end: -5.5rem
+          width: 100%
+          max-width: 1111px
+          color: #83888F
+          background: linear-gradient(180deg, rgba(131, 136, 143, 1) -200%, #FEFCF7 100%)
+          color: transparent
+          background-clip: text
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+          -moz-background-clip: text
+          -moz-text-fill-color: transparent
+          text-align: center
+          font-size: 9.375rem
+          line-height: 100%
       .card
         width: 100%
         max-width: 280px
@@ -56,6 +73,9 @@ main
           max-width: 35.8rem
           gap: 2.25rem
           flex-direction: row
+        @include m.desktop()
+          max-width: 255px
+          flex-direction: column
         img
           width: 100%
           max-width: 12.5rem
@@ -75,6 +95,8 @@ main
             line-height: 2rem
             @include m.tablet()
               text-align: left
+            @include m.desktop()
+              text-align: center
           p
             text-align: center
             font-family: Barlow
@@ -83,6 +105,8 @@ main
             line-height: 1.5625rem
             @include m.tablet()
               text-align: left
+            @include m.desktop()
+              text-align: center
   #why
     width: 100%
     display: grid
