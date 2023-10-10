@@ -16,23 +16,34 @@ footer
     padding-block: 3.37rem
     @include m.tablet()
       gap: 2rem
-    .menu
+    @include m.desktop()
+      flex-direction: row
+      padding: 3rem 5.3rem
+      justify-content: space-between
+    .footer-header
       display: flex
       flex-direction: column
-      align-items: center
-      gap: 1.5rem
-      @include m.tablet()
+      @include m.desktop()
         flex-direction: row
-        gap: 2rem
-      a
-        font-family: Barlow
-        font-size: 0.75rem
-        font-style: normal
-        font-weight: 700
-        line-height: 0.9375rem
-        letter-spacing: 0.05769rem
-        text-transform: uppercase
-        color: v.$grey
+        gap: 6.4rem
+      .logo
+        display: flex
+      .menu
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 1.5rem
+        @include m.tablet()
+          flex-direction: row
+          gap: 2rem
+        a
+          font-family: Barlow
+          font-size: 0.75rem
+          font-weight: 700
+          line-height: 0.9375rem
+          letter-spacing: 0.05769rem
+          text-transform: uppercase
+          color: v.$grey
     .socials
       display: flex
       gap: 1.5rem

@@ -267,7 +267,7 @@ main
           display: none
           @include m.tablet()
             display: flex
-            gap: 13.5rem
+            gap: 12.6rem
             position: relative
             display: flex
             max-width: min-content
@@ -292,7 +292,7 @@ main
           @include m.desktop()
             gap: 21.81rem
             .item
-              margin-block: 5rem 4.2rem
+              margin-block: 5rem
       .how-cards
         display: flex
         flex-direction: column
@@ -300,6 +300,7 @@ main
         gap: 3.5rem
         @include m.tablet()
           flex-direction: row
+          flex-wrap: wrap
           gap: 10px
           margin-bottom: 44px
         @include m.desktop()
@@ -331,9 +332,12 @@ main
             font-weight: 900
             line-height: 2rem
             @include m.tablet()
+              max-width: 13.9rem
+              min-width: 13.9rem
               text-align: left
             @include m.desktop()
               max-width: 15.9rem
+              min-width: 15.9rem
               color: #333D4B
               font-size: 2rem
               line-height: 2.25rem
@@ -345,9 +349,11 @@ main
             line-height: 1.5625rem
             @include m.tablet()
               text-align: left
-              min-width: 223px
+              min-width: 13.9375rem
+              max-width: 13.9375rem
             @include m.desktop()
-            max-width: 17.8rem
+              max-width: 17.8rem
+              min-width: 17.8rem
               color: #333D4B
               font-size: 1rem
               line-height: 1.625rem

@@ -635,7 +635,7 @@ main #how .container-flex .how-header .items {
 @media (min-width: 768px) {
   main #how .container-flex .how-header .items {
     display: flex;
-    gap: 13.5rem;
+    gap: 12.6rem;
     position: relative;
     display: flex;
     max-width: min-content;
@@ -666,7 +666,7 @@ main #how .container-flex .how-header .items {
     gap: 21.81rem;
   }
   main #how .container-flex .how-header .items .item {
-    margin-block: 5rem 4.2rem;
+    margin-block: 5rem;
   }
 }
 main #how .container-flex .how-cards {
@@ -678,6 +678,7 @@ main #how .container-flex .how-cards {
 @media (min-width: 768px) {
   main #how .container-flex .how-cards {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 44px;
   }
@@ -728,12 +729,15 @@ main #how .container-flex .how-cards .how-card h3 {
 }
 @media (min-width: 768px) {
   main #how .container-flex .how-cards .how-card h3 {
+    max-width: 13.9rem;
+    min-width: 13.9rem;
     text-align: left;
   }
 }
 @media (min-width: 1024px) {
   main #how .container-flex .how-cards .how-card h3 {
     max-width: 15.9rem;
+    min-width: 15.9rem;
     color: #333D4B;
     font-size: 2rem;
     line-height: 2.25rem;
@@ -745,15 +749,21 @@ main #how .container-flex .how-cards .how-card p {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5625rem;
-  max-width: 17.8rem;
-  max-width-color: #333D4B;
-  max-width-font-size: 1rem;
-  max-width-line-height: 1.625rem;
 }
 @media (min-width: 768px) {
   main #how .container-flex .how-cards .how-card p {
     text-align: left;
-    min-width: 223px;
+    min-width: 13.9375rem;
+    max-width: 13.9375rem;
+  }
+}
+@media (min-width: 1024px) {
+  main #how .container-flex .how-cards .how-card p {
+    max-width: 17.8rem;
+    min-width: 17.8rem;
+    color: #333D4B;
+    font-size: 1rem;
+    line-height: 1.625rem;
   }
 }
 main #how .container-flex .button-primary {
@@ -1221,22 +1231,41 @@ footer .container-flex {
     gap: 2rem;
   }
 }
-footer .container-flex .menu {
+@media (min-width: 1024px) {
+  footer .container-flex {
+    flex-direction: row;
+    padding: 3rem 5.3rem;
+    justify-content: space-between;
+  }
+}
+footer .container-flex .footer-header {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  footer .container-flex .footer-header {
+    flex-direction: row;
+    gap: 6.4rem;
+  }
+}
+footer .container-flex .footer-header .logo {
+  display: flex;
+}
+footer .container-flex .footer-header .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
 @media (min-width: 768px) {
-  footer .container-flex .menu {
+  footer .container-flex .footer-header .menu {
     flex-direction: row;
     gap: 2rem;
   }
 }
-footer .container-flex .menu a {
+footer .container-flex .footer-header .menu a {
   font-family: Barlow;
   font-size: 0.75rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 0.9375rem;
   letter-spacing: 0.05769rem;

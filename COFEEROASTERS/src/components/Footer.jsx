@@ -10,13 +10,15 @@ const Footer = () => {
   return (
     <footer>
       <div className="container-flex">
-        <div className="logo">
-          <img src={LogoWhite} alt="Coffeeroasters" />
-        </div>
-        <div className="menu">
-          <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/plan">Create Your Plan</Link>
+        <div className="footer-header">
+          <div className="logo">
+            <img src={LogoWhite} alt="Coffeeroasters" />
+          </div>
+          <div className="menu">
+            <Link to="/">Home</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/plan">Create Your Plan</Link>
+          </div>
         </div>
         <div className="socials">
           <a href="#">
