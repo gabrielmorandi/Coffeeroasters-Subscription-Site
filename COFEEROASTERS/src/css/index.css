@@ -534,7 +534,7 @@ main #why .container-flex .why-cards .why-card {
 main #why .container-flex .why-cards .why-card img {
   width: 100%;
   max-width: 4.5rem;
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
 }
 @media (min-width: 768px) {
   main #why .container-flex .why-cards .why-card img {
@@ -612,6 +612,11 @@ main #how .container-flex {
     gap: 0;
   }
 }
+@media (min-width: 1024px) {
+  main #how .container-flex {
+    padding-inline: 5.3rem;
+  }
+}
 main #how .container-flex .how-header {
   display: flex;
   flex-direction: column;
@@ -679,14 +684,14 @@ main #how .container-flex .how-cards {
   main #how .container-flex .how-cards {
     flex-direction: row;
     gap: 10px;
-    margin-bottom: 44px;
+    margin-block-end: 44px;
   }
 }
 @media (min-width: 1024px) {
   main #how .container-flex .how-cards {
     gap: 5.94rem;
     flex-wrap: wrap;
-    margin-bottom: 4rem;
+    margin-block-end: 4rem;
   }
 }
 main #how .container-flex .how-cards .how-card {
