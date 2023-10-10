@@ -23,11 +23,15 @@ footer
     .footer-header
       display: flex
       flex-direction: column
+      gap: 3rem
+      @include m.tablet()
+        gap: 2rem
       @include m.desktop()
         flex-direction: row
         gap: 6.4rem
       .logo
         display: flex
+        justify-content: center
       .menu
         display: flex
         flex-direction: column
