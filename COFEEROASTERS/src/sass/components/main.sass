@@ -289,6 +289,10 @@ main
               border-radius: 50%
               border: 2px solid #0E8784
               margin-block: 2.5rem
+          @include m.desktop()
+            gap: 21.81rem
+            .item
+              margin-block: 5rem 4.2rem
       .how-cards
         display: flex
         flex-direction: column
@@ -297,13 +301,18 @@ main
         @include m.tablet()
           flex-direction: row
           gap: 10px
+          margin-bottom: 44px
+        @include m.desktop()
+          gap: 5.94rem
+          margin-bottom: 4rem
         .how-card
           display: flex
           flex-direction: column
           gap: 1.5rem
           @include m.tablet()
             gap: 2rem
-            margin-bottom: 44px
+          @include m.desktop()
+            gap: 2.3rem
           span
             text-align: center
             font-family: Fraunces
@@ -323,6 +332,11 @@ main
             line-height: 2rem
             @include m.tablet()
               text-align: left
+            @include m.desktop()
+              max-width: 15.9rem
+              color: #333D4B
+              font-size: 2rem
+              line-height: 2.25rem
           p
             text-align: center
             font-family: Barlow
@@ -332,6 +346,11 @@ main
             @include m.tablet()
               text-align: left
               min-width: 223px
+            @include m.desktop()
+            max-width: 17.8rem
+              color: #333D4B
+              font-size: 1rem
+              line-height: 1.625rem
       .button-primary
         place-items: start
   #commitment

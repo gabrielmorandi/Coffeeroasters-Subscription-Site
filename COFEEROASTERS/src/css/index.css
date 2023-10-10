@@ -661,6 +661,14 @@ main #how .container-flex .how-header .items {
     margin-block: 2.5rem;
   }
 }
+@media (min-width: 1024px) {
+  main #how .container-flex .how-header .items {
+    gap: 21.81rem;
+  }
+  main #how .container-flex .how-header .items .item {
+    margin-block: 5rem 4.2rem;
+  }
+}
 main #how .container-flex .how-cards {
   display: flex;
   flex-direction: column;
@@ -671,6 +679,13 @@ main #how .container-flex .how-cards {
   main #how .container-flex .how-cards {
     flex-direction: row;
     gap: 10px;
+    margin-bottom: 44px;
+  }
+}
+@media (min-width: 1024px) {
+  main #how .container-flex .how-cards {
+    gap: 5.94rem;
+    margin-bottom: 4rem;
   }
 }
 main #how .container-flex .how-cards .how-card {
@@ -681,7 +696,11 @@ main #how .container-flex .how-cards .how-card {
 @media (min-width: 768px) {
   main #how .container-flex .how-cards .how-card {
     gap: 2rem;
-    margin-bottom: 44px;
+  }
+}
+@media (min-width: 1024px) {
+  main #how .container-flex .how-cards .how-card {
+    gap: 2.3rem;
   }
 }
 main #how .container-flex .how-cards .how-card span {
@@ -712,12 +731,24 @@ main #how .container-flex .how-cards .how-card h3 {
     text-align: left;
   }
 }
+@media (min-width: 1024px) {
+  main #how .container-flex .how-cards .how-card h3 {
+    max-width: 15.9rem;
+    color: #333D4B;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
 main #how .container-flex .how-cards .how-card p {
   text-align: center;
   font-family: Barlow;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5625rem;
+  max-width: 17.8rem;
+  max-width-color: #333D4B;
+  max-width-font-size: 1rem;
+  max-width-line-height: 1.625rem;
 }
 @media (min-width: 768px) {
   main #how .container-flex .how-cards .how-card p {
