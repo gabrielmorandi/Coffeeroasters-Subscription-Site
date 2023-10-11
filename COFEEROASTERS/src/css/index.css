@@ -319,7 +319,7 @@ main #collection .container-flex h2 {
     margin-block-end: -5.5rem;
     width: 100%;
     max-width: 1111px;
-    color: #83888F;
+    color: #333D4B;
     background: linear-gradient(180deg, rgb(131, 136, 143) -200%, #FEFCF7 100%);
     color: transparent;
     background-clip: text;
@@ -1280,9 +1280,10 @@ main #make-plan .container-flex form .select .select-header {
   grid-template-columns: 1fr 19px;
   gap: 4.3rem;
   align-items: center;
+  cursor: pointer;
 }
 main #make-plan .container-flex form .select .select-header h2 {
-  color: #83888F;
+  color: #333D4B;
   font-family: Fraunces;
   font-size: 1.5rem;
   font-weight: 900;
@@ -1290,7 +1291,7 @@ main #make-plan .container-flex form .select .select-header h2 {
 }
 @media (min-width: 768px) {
   main #make-plan .container-flex form .select .select-header h2 {
-    color: #83888F;
+    color: #333D4B;
     font-size: 2rem;
     line-height: 3rem;
   }
