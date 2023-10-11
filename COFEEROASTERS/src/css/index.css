@@ -981,6 +981,7 @@ main #headquarters {
 }
 main #headquarters .container-flex {
   flex-direction: column;
+  max-width: 65rem;
 }
 main #headquarters .container-flex h2 {
   color: #83888F;
