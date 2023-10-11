@@ -1007,6 +1007,11 @@ main #headquarters .container-flex .headquarters-cards {
     gap: 10px;
   }
 }
+@media (min-width: 1024px) {
+  main #headquarters .container-flex .headquarters-cards {
+    gap: 6rem;
+  }
+}
 main #headquarters .container-flex .headquarters-cards .headquarters-card {
   display: flex;
   flex-direction: column;
@@ -1016,6 +1021,11 @@ main #headquarters .container-flex .headquarters-cards .headquarters-card {
 @media (min-width: 768px) {
   main #headquarters .container-flex .headquarters-cards .headquarters-card {
     align-items: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  main #headquarters .container-flex .headquarters-cards .headquarters-card {
+    gap: 1.5rem;
   }
 }
 main #headquarters .container-flex .headquarters-cards .headquarters-card h2 {
@@ -1032,6 +1042,12 @@ main #headquarters .container-flex .headquarters-cards .headquarters-card h2 {
     font-size: 1.5rem;
   }
 }
+@media (min-width: 1024px) {
+  main #headquarters .container-flex .headquarters-cards .headquarters-card h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
 main #headquarters .container-flex .headquarters-cards .headquarters-card p {
   color: #333D4B;
   text-align: center;
@@ -1044,6 +1060,13 @@ main #headquarters .container-flex .headquarters-cards .headquarters-card p {
   main #headquarters .container-flex .headquarters-cards .headquarters-card p {
     text-align: left;
     width: 13.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  main #headquarters .container-flex .headquarters-cards .headquarters-card p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    width: 17.8rem;
   }
 }
 main #plans {
