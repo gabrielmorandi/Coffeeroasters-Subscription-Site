@@ -1078,13 +1078,20 @@ main #plans {
   padding-block: 5rem;
   border-radius: 0.625rem;
 }
+@media (min-width: 1024px) {
+  main #plans {
+    width: 87%;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
 main #plans .container-flex {
   flex-direction: column;
   gap: 3.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   main #plans .container-flex {
-    gap: 3.5rem;
+    gap: 5.1rem;
   }
 }
 main #plans .container-flex .items {
@@ -1118,6 +1125,11 @@ main #plans .container-flex .items {
     z-index: 1000000;
   }
 }
+@media (min-width: 1024px) {
+  main #plans .container-flex .items {
+    gap: 21.81rem;
+  }
+}
 main #plans .container-flex .plans {
   display: flex;
   flex-direction: column;
@@ -1127,6 +1139,11 @@ main #plans .container-flex .plans {
   main #plans .container-flex .plans {
     flex-direction: row;
     gap: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  main #plans .container-flex .plans {
+    gap: 5.94rem;
   }
 }
 main #plans .container-flex .plans .plan {
@@ -1165,6 +1182,11 @@ main #plans .container-flex .plans h3 {
     text-align: left;
   }
 }
+@media (min-width: 1024px) {
+  main #plans .container-flex .plans h3 {
+    max-width: 15.9rem;
+  }
+}
 main #plans .container-flex .plans p {
   color: #FFF;
   text-align: center;
@@ -1176,6 +1198,13 @@ main #plans .container-flex .plans p {
 @media (min-width: 768px) {
   main #plans .container-flex .plans p {
     text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  main #plans .container-flex .plans p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    max-width: 17.8rem;
   }
 }
 main #make-plan {

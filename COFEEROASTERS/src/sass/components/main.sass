@@ -564,11 +564,15 @@ main
     background-color: #293039
     padding-block: 5rem
     border-radius: 0.625rem
+    @include m.desktop()
+      width: 87%
+      max-width: 80rem
+      margin: 0 auto
     .container-flex
       flex-direction: column
       gap: 3.5rem
-      @include m.tablet()
-        gap: 3.5rem
+      @include m.desktop()
+        gap: 5.1rem
       .items
         display: none
         @include m.tablet()
@@ -594,6 +598,8 @@ main
             border-radius: 50%
             border: 2px solid #0E8784
             z-index: 1000000
+        @include m.desktop()
+          gap: 21.81rem
       .plans
         display: flex
         flex-direction: column
@@ -601,6 +607,8 @@ main
         @include m.tablet()
           flex-direction: row
           gap: 10px
+        @include m.desktop()
+          gap: 5.94rem
         .plan
           display: flex
           flex-direction: column
@@ -625,6 +633,8 @@ main
           line-height: 2rem
           @include m.tablet()
             text-align: left
+          @include m.desktop()
+            max-width: 15.9rem
         p
           color: #FFF
           text-align: center
@@ -634,6 +644,10 @@ main
           line-height: 1.5625rem
           @include m.tablet()
             text-align: left
+          @include m.desktop()
+            font-size: 1rem
+            line-height: 1.625rem
+            max-width: 17.8rem
   #make-plan
     width: 100%
     display: grid
