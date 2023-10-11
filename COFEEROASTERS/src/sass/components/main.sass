@@ -368,6 +368,7 @@ main
     .container-flex
       flex-direction: column
       gap: 7.5rem
+      max-width: 69.3rem
       .our
         display: flex
         flex-direction: column
@@ -385,10 +386,15 @@ main
             @include m.tablet()
               width: 17.5625rem
               height: 29.375rem
+            @include m.desktop()
+              width: 27.8rem
+              height: 32.5rem
         .our-content
           display: flex
           flex-direction: column
           gap: 2rem
+          @include m.desktop()
+            justify-content: center
           h2
             color: v.$grey-blue
             text-align: center
@@ -399,6 +405,9 @@ main
             @include m.tablet()
               max-width: 21.1875rem
               text-align: left
+            @include m.desktop()
+              font-size: 2.5rem
+              max-width: 22.7rem
         p
           color: #333D4B
           text-align: center
@@ -408,8 +417,12 @@ main
           line-height: 1.5625rem
           opacity: 0.800000011920929
           @include m.tablet()
-            max-width: 21.1875rem
+            min-width: 21.1875rem
             text-align: left
+          @include m.desktop()
+            font-size: 1rem
+            line-height: 1.625rem
+            max-width: 33.75rem
   #quality
     width: 100%
     display: grid

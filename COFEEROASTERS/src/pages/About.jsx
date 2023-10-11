@@ -5,6 +5,7 @@ import Footer from "../components/Footer"
 
 import Commitment from "../assets/about/mobile/image-commitment.jpg"
 import CommitmentTablet from "../assets/about/tablet/image-commitment.jpg"
+import CommitmentDesk from "../assets/about/desktop/image-commitment.jpg"
 import Quality from "../assets/about/mobile/image-quality.jpg"
 import UK from "../assets/about/desktop/illustration-uk.svg"
 import Australia from "../assets/about/desktop/illustration-australia.svg"
@@ -19,6 +20,7 @@ function AboutPage() {
           <div className="container-flex">
             <div className="our">
               <picture>
+                <source srcset={CommitmentDesk} media="(min-width: 1024px)" />
                 <source srcset={CommitmentTablet} media="(min-width: 768px)" />
                 <img src={Commitment} alt="Our commitment" />
               </picture>

@@ -782,6 +782,7 @@ main #commitment {
 main #commitment .container-flex {
   flex-direction: column;
   gap: 7.5rem;
+  max-width: 69.3rem;
 }
 main #commitment .container-flex .our {
   display: flex;
@@ -809,10 +810,21 @@ main #commitment .container-flex .our picture img {
     height: 29.375rem;
   }
 }
+@media (min-width: 1024px) {
+  main #commitment .container-flex .our picture img {
+    width: 27.8rem;
+    height: 32.5rem;
+  }
+}
 main #commitment .container-flex .our .our-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media (min-width: 1024px) {
+  main #commitment .container-flex .our .our-content {
+    justify-content: center;
+  }
 }
 main #commitment .container-flex .our .our-content h2 {
   color: #333D4B;
@@ -828,6 +840,12 @@ main #commitment .container-flex .our .our-content h2 {
     text-align: left;
   }
 }
+@media (min-width: 1024px) {
+  main #commitment .container-flex .our .our-content h2 {
+    font-size: 2.5rem;
+    max-width: 22.7rem;
+  }
+}
 main #commitment .container-flex .our p {
   color: #333D4B;
   text-align: center;
@@ -839,8 +857,15 @@ main #commitment .container-flex .our p {
 }
 @media (min-width: 768px) {
   main #commitment .container-flex .our p {
-    max-width: 21.1875rem;
+    min-width: 21.1875rem;
     text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  main #commitment .container-flex .our p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    max-width: 33.75rem;
   }
 }
 main #quality {
