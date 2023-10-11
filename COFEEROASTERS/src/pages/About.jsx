@@ -7,6 +7,7 @@ import Commitment from "../assets/about/mobile/image-commitment.jpg"
 import CommitmentTablet from "../assets/about/tablet/image-commitment.jpg"
 import CommitmentDesk from "../assets/about/desktop/image-commitment.jpg"
 import Quality from "../assets/about/mobile/image-quality.jpg"
+import QualityDesk from "../assets/about/desktop/image-quality.jpg"
 import UK from "../assets/about/desktop/illustration-uk.svg"
 import Australia from "../assets/about/desktop/illustration-australia.svg"
 import Canada from "../assets/about/desktop/illustration-canada.svg"
@@ -47,16 +48,21 @@ function AboutPage() {
         </section>
         <section id="quality">
           <div className="container-flex">
-            <img src={Quality} alt="Uncompromising quality" />
-            <h2>Uncompromising quality</h2>
-            <p>
-              Although we work with growers who pay close attention to all
-              stages of harvest and processing, we employ, on our end, a
-              rigorous quality control program to avoid over-roasting or baking
-              the coffee dry. Every bag of coffee is tagged with a roast date
-              and batch number. Our goal is to roast consistent, user-friendly
-              coffee, so that brewing is easy and enjoyable.
-            </p>
+            <picture>
+              <source media="(min-width: 1024px)" srcset={QualityDesk} />
+              <img src={Quality} alt="Uncompromising quality" />
+            </picture>
+            <div className="quality-content">
+              <h2>Uncompromising quality</h2>
+              <p>
+                Although we work with growers who pay close attention to all
+                stages of harvest and processing, we employ, on our end, a
+                rigorous quality control program to avoid over-roasting or
+                baking the coffee dry. Every bag of coffee is tagged with a
+                roast date and batch number. Our goal is to roast consistent,
+                user-friendly coffee, so that brewing is easy and enjoyable.
+              </p>
+            </div>
           </div>
         </section>
         <section id="headquarters">

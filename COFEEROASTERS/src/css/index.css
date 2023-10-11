@@ -883,34 +883,77 @@ main #quality .container-flex {
   padding-block: 5rem 3.8rem;
   position: relative;
 }
-main #quality .container-flex img {
+@media (min-width: 1024px) {
+  main #quality .container-flex {
+    align-items: flex-start;
+    padding-inline: 5.31rem;
+    padding-block-end: 11rem;
+  }
+}
+main #quality .container-flex picture {
+  display: flex;
+  justify-content: center;
+}
+main #quality .container-flex picture img {
   position: absolute;
   top: -5rem;
   width: 85%;
   border-radius: 0.5rem;
+  max-width: 400px;
 }
 @media (min-width: 768px) {
-  main #quality .container-flex img {
+  main #quality .container-flex picture img {
     top: -9.75rem;
+    max-width: 590px;
   }
 }
-main #quality .container-flex h2 {
+@media (min-width: 1024px) {
+  main #quality .container-flex picture img {
+    width: 27.8125rem;
+    height: 29.625rem;
+    top: -5.5rem;
+    right: 5.31rem;
+  }
+}
+main #quality .container-flex .quality-content {
+  display: flex;
+  flex-direction: column;
+  padding-block-start: 4rem;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  main #quality .container-flex .quality-content {
+    padding-block-start: 8rem;
+  }
+}
+@media (min-width: 1024px) {
+  main #quality .container-flex .quality-content {
+    padding-block-start: 0;
+  }
+}
+main #quality .container-flex .quality-content h2 {
   color: #FEFCF7;
   text-align: center;
   font-family: Fraunces;
   font-size: 1.75rem;
   font-weight: 900;
   line-height: 1.75rem;
-  padding-block-start: 4rem;
+  z-index: 1;
 }
 @media (min-width: 768px) {
-  main #quality .container-flex h2 {
+  main #quality .container-flex .quality-content h2 {
     font-size: 2rem;
     line-height: 3rem;
-    padding-block-start: 8rem;
   }
 }
-main #quality .container-flex p {
+@media (min-width: 1024px) {
+  main #quality .container-flex .quality-content h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+main #quality .container-flex .quality-content p {
   color: #FEFCF7;
   text-align: center;
   font-family: Barlow;
@@ -920,8 +963,15 @@ main #quality .container-flex p {
   opacity: 0.8000000119;
 }
 @media (min-width: 768px) {
-  main #quality .container-flex p {
+  main #quality .container-flex .quality-content p {
     max-width: 33.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  main #quality .container-flex .quality-content p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.625rem;
   }
 }
 main #headquarters {
