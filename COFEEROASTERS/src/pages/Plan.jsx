@@ -67,6 +67,30 @@ function Plan() {
         </section>
         <section id="make-plan">
           <div className="container-flex">
+            <div className="plan-anchor">
+              <div className="anchors">
+                <div className="anchor">
+                  <span>01</span>
+                  <h2>Preference</h2>
+                </div>
+                <div className="anchor">
+                  <span>02</span>
+                  <h2>Bean Type</h2>
+                </div>
+                <div className="anchor">
+                  <span>03</span>
+                  <h2>Quantity</h2>
+                </div>
+                <div className="anchor">
+                  <span>04</span>
+                  <h2>Grind Option</h2>
+                </div>
+                <div className="anchor">
+                  <span>05</span>
+                  <h2>Deliveries</h2>
+                </div>
+              </div>
+            </div>
             <form id="form" action="">
               <div className="select">
                 <div

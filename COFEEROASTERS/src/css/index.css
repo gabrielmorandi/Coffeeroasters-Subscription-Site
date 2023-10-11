@@ -1215,11 +1215,60 @@ main #make-plan {
 main #make-plan .container-flex {
   justify-content: center;
 }
+@media (min-width: 1024px) {
+  main #make-plan .container-flex {
+    justify-content: space-between;
+  }
+}
+main #make-plan .container-flex .plan-anchor {
+  display: none;
+}
+@media (min-width: 1024px) {
+  main #make-plan .container-flex .plan-anchor {
+    display: flex;
+    width: 30rem;
+    justify-content: center;
+  }
+}
+main #make-plan .container-flex .plan-anchor .anchors {
+  display: flex;
+  flex-direction: column;
+  max-width: 15.93rem;
+}
+main #make-plan .container-flex .plan-anchor .anchors .anchor {
+  display: flex;
+  align-items: center;
+  gap: 1.78rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid #eae9e6;
+}
+main #make-plan .container-flex .plan-anchor .anchors .anchor:first-child {
+  padding-block-start: 0.3rem;
+}
+main #make-plan .container-flex .plan-anchor .anchors .anchor span {
+  color: #83888F;
+  font-family: Fraunces;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2rem;
+}
+main #make-plan .container-flex .plan-anchor .anchors .anchor h2 {
+  color: #acafb2;
+  font-family: Fraunces;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2rem;
+}
 main #make-plan .container-flex form {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 6rem;
+}
+@media (min-width: 1024px) {
+  main #make-plan .container-flex form {
+    max-width: 45.625rem;
+  }
 }
 main #make-plan .container-flex form .select {
   display: flex;

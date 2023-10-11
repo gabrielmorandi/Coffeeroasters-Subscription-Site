@@ -654,11 +654,45 @@ main
     place-items: center
     .container-flex
       justify-content: center
+      @include m.desktop()
+        justify-content: space-between
+      .plan-anchor
+        display: none
+        @include m.desktop()
+          display: flex
+          width: 30rem
+          justify-content: center
+        .anchors
+          display: flex
+          flex-direction: column
+          max-width: 15.93rem
+          .anchor
+            display: flex
+            align-items: center
+            gap: 1.78rem
+            padding-block: 1.5rem
+            border-bottom: 1px solid #eae9e6
+            &:first-child
+              padding-block-start: .3rem
+            span
+              color: v.$grey
+              font-family: Fraunces
+              font-size: 1.5rem
+              font-weight: 900
+              line-height: 2rem
+            h2
+              color: #acafb2
+              font-family: Fraunces
+              font-size: 1.5rem
+              font-weight: 900
+              line-height: 2rem
       form
         width: 100%
         display: flex
         flex-direction: column
         gap: 6rem
+        @include m.desktop()
+          max-width: 45.625rem
         .select
           display: flex
           flex-direction: column
