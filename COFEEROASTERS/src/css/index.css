@@ -1354,6 +1354,11 @@ main #create-plan .container-flex {
   flex-direction: column;
   gap: 5rem;
 }
+@media (min-width: 1024px) {
+  main #create-plan .container-flex {
+    align-items: flex-end;
+  }
+}
 main #create-plan .container-flex .order {
   display: flex;
   flex-direction: column;
@@ -1365,6 +1370,11 @@ main #create-plan .container-flex .order {
 @media (min-width: 768px) {
   main #create-plan .container-flex .order {
     padding: 2rem 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  main #create-plan .container-flex .order {
+    max-width: 45.62rem;
   }
 }
 main #create-plan .container-flex .order p {

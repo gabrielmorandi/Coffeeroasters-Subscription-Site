@@ -756,6 +756,8 @@ main
     .container-flex
       flex-direction: column
       gap: 5rem
+      @include m.desktop()
+        align-items: flex-end
       .order
         display: flex
         flex-direction: column
@@ -765,6 +767,8 @@ main
         border-radius: .5rem
         @include m.tablet()
           padding: 2rem 2rem
+        @include m.desktop()
+          max-width: 45.62rem
         p
           color: #FFF
           font-family: Barlow
