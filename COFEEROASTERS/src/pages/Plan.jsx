@@ -1,5 +1,8 @@
-import React, { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
