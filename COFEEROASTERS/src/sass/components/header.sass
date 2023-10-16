@@ -45,6 +45,9 @@ header
           line-height: 0.9375rem
           letter-spacing: 0.05769rem
           text-transform: uppercase
+          &:hover
+            color: v.$grey-blue
+            transition: .2s
       .menu-mobile
         position: absolute
         display: flex
@@ -146,3 +149,7 @@ header
       .button-primary
         padding-block-start: 1.5rem
         justify-content: flex-start
+        a
+          button:hover
+            background-color: #66D2CF
+            transition: .2s

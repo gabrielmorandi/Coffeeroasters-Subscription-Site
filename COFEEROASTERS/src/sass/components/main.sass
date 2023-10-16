@@ -361,6 +361,10 @@ main
               line-height: 1.625rem
       .button-primary
         place-items: start
+        a
+          button:hover
+            background-color: #66D2CF
+            transition: .2s
   #commitment
     width: 100%
     display: grid
@@ -732,9 +736,13 @@ main
               background-color: #F4F1EB
               border-radius: .5rem
               gap: .5rem
+              cursor: pointer
               @include m.tablet()
                 padding: 2rem 1.55rem
                 min-height: 14rem
+              &:hover
+                background-color: v.$orange
+                transition: .2s
               &.selected
                 background-color: v.$cyan
                 h3, p
@@ -789,3 +797,8 @@ main
           font-size: 1.5rem
           font-weight: 900
           line-height: 2.5rem
+      .button-primary
+        a
+          button:hover
+            background-color: #66D2CF
+            transition: .2s

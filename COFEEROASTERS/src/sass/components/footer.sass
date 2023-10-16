@@ -48,8 +48,13 @@ footer
           letter-spacing: 0.05769rem
           text-transform: uppercase
           color: v.$grey
+          &:hover
+            color: v.$light
+            transition: .2s
     .socials
       display: flex
       gap: 1.5rem
       a
         display: flex
+        &:hover img
+          filter: saturate(5)

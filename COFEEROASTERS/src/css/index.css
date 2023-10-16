@@ -109,6 +109,10 @@ header nav .container-flex .menu-desktop a {
   letter-spacing: 0.05769rem;
   text-transform: uppercase;
 }
+header nav .container-flex .menu-desktop a:hover {
+  color: #333D4B;
+  transition: 0.2s;
+}
 header nav .container-flex .menu-mobile {
   position: absolute;
   display: flex;
@@ -254,6 +258,10 @@ header .hero .container-flex p {
 header .hero .container-flex .button-primary {
   padding-block-start: 1.5rem;
   justify-content: flex-start;
+}
+header .hero .container-flex .button-primary a button:hover {
+  background-color: #66D2CF;
+  transition: 0.2s;
 }
 
 main {
@@ -773,6 +781,10 @@ main #how .container-flex .how-cards .how-card p {
 }
 main #how .container-flex .button-primary {
   place-items: start;
+}
+main #how .container-flex .button-primary a button:hover {
+  background-color: #66D2CF;
+  transition: 0.2s;
 }
 main #commitment {
   width: 100%;
@@ -1320,12 +1332,17 @@ main #make-plan .container-flex form .select-content .radio label {
   background-color: #F4F1EB;
   border-radius: 0.5rem;
   gap: 0.5rem;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   main #make-plan .container-flex form .select-content .radio label {
     padding: 2rem 1.55rem;
     min-height: 14rem;
   }
+}
+main #make-plan .container-flex form .select-content .radio label:hover {
+  background-color: #FDD6BA;
+  transition: 0.2s;
 }
 main #make-plan .container-flex form .select-content .radio label.selected {
   background-color: #0E8784;
@@ -1400,6 +1417,10 @@ main #create-plan .container-flex .order .d {
   font-weight: 900;
   line-height: 2.5rem;
 }
+main #create-plan .container-flex .button-primary a button:hover {
+  background-color: #66D2CF;
+  transition: 0.2s;
+}
 
 footer {
   width: 100%;
@@ -1472,12 +1493,19 @@ footer .container-flex .footer-header .menu a {
   text-transform: uppercase;
   color: #83888F;
 }
+footer .container-flex .footer-header .menu a:hover {
+  color: #FEFCF7;
+  transition: 0.2s;
+}
 footer .container-flex .socials {
   display: flex;
   gap: 1.5rem;
 }
 footer .container-flex .socials a {
   display: flex;
+}
+footer .container-flex .socials a:hover img {
+  filter: saturate(5);
 }
 
 /*# sourceMappingURL=index.css.map */
