@@ -1247,6 +1247,10 @@ main #make-plan .container-flex .plan-anchor .anchors {
   flex-direction: column;
   max-width: 15.93rem;
 }
+main #make-plan .container-flex .plan-anchor .anchors.fixed {
+  position: fixed;
+  top: 1.5rem;
+}
 main #make-plan .container-flex .plan-anchor .anchors .anchor {
   display: flex;
   align-items: center;

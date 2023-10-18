@@ -11,7 +11,9 @@ const Footer = () => {
       <div className="container-flex">
         <div className="footer-header">
           <div className="logo">
-            <img src={LogoWhite} alt="Coffeeroasters" />
+            <Link to="/">
+              <img src={LogoWhite} alt="Coffeeroasters" />
+            </Link>
           </div>
           <div className="menu">
             <Link to="/">Home</Link>

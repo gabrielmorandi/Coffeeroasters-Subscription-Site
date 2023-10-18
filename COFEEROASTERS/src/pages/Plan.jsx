@@ -1,8 +1,5 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-gsap.registerPlugin(ScrollTrigger)
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -24,6 +21,23 @@ function Plan() {
 
   const [select5, setSelect5] = useState(true)
   const [selectedInput5, setSelectedInput5] = useState("Every Week")
+
+  let fixedRef = useRef(null)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 1421 && window.scrollY <= 3200) {
+        fixedRef.current.classList.add("fixed")
+      } else {
+        fixedRef.current.classList.remove("fixed")
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
     <>
@@ -71,31 +85,31 @@ function Plan() {
         <section id="make-plan">
           <div className="container-flex">
             <div className="plan-anchor">
-              <div className="anchors">
-                <div className="anchor">
+              <div className="anchors" ref={fixedRef}>
+                <a href="#01" className="anchor">
                   <span>01</span>
                   <h2>Preference</h2>
-                </div>
-                <div className="anchor">
+                </a>
+                <a href="#02" className="anchor">
                   <span>02</span>
                   <h2>Bean Type</h2>
-                </div>
-                <div className="anchor">
+                </a>
+                <a href="#03" className="anchor">
                   <span>03</span>
                   <h2>Quantity</h2>
-                </div>
-                <div className="anchor">
+                </a>
+                <a href="#04" className="anchor">
                   <span>04</span>
                   <h2>Grind Option</h2>
-                </div>
-                <div className="anchor">
+                </a>
+                <a href="#05" className="anchor">
                   <span>05</span>
                   <h2>Deliveries</h2>
-                </div>
+                </a>
               </div>
             </div>
             <form id="form" action="">
-              <div className="select">
+              <div className="select" id="01">
                 <div
                   className="select-header"
                   onClick={() => setSelect1(!select1)}
@@ -172,7 +186,7 @@ function Plan() {
                   </div>
                 )}
               </div>
-              <div className="select">
+              <div className="select" id="02">
                 <div
                   className="select-header"
                   onClick={() => setSelect2(!select2)}
@@ -249,7 +263,7 @@ function Plan() {
                   </div>
                 )}
               </div>
-              <div className="select">
+              <div className="select" id="03">
                 <div
                   className="select-header"
                   onClick={() => setSelect3(!select3)}
@@ -322,7 +336,7 @@ function Plan() {
                   </div>
                 )}
               </div>
-              <div className="select">
+              <div className="select" id="04">
                 <div
                   className="select-header"
                   onClick={() => setSelect4(!select4)}
@@ -398,7 +412,7 @@ function Plan() {
                   </div>
                 )}
               </div>
-              <div className="select">
+              <div className="select" id="05">
                 <div
                   className="select-header"
                   onClick={() => setSelect5(!select5)}
